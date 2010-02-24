@@ -6,7 +6,7 @@ wordpress_url: http://tragicallyleet.com/?p=304
 ---
 <p>NOTE: I delayed posting these entries to clean up my notes and add some useful links. </p>
 <p><i>GRUMPY NOTE: I lost a bunch of notes so this is based on my faulty memory and some slides.</i> </p>
-<p>I got in a little late today after grabbing coffee and headed to <a href="http://michaelnygard.com/" target="_blank">Michael Nygard's</a> presentation "Architect for Scale". I love the smell of capacity math in the morning. </p>
+<p>I got in a little late today after grabbing coffee and headed to [Michael Nygard's](http://michaelnygard.com/) presentation "Architect for Scale". I love the smell of capacity math in the morning. </p>
 <h3>Amdahl's Law</h3>[pmath]T_p=sigmaT_1+{(1-sigma)T_1/p}[/pmath] 
 <h4>Speedup Ratio</h4>[pmath]S_p=T_1/1+sigma(p-1) [/pmath] 
 <h3>Universal Scalability Law</h3>
@@ -14,7 +14,7 @@ wordpress_url: http://tragicallyleet.com/?p=304
 <br />where <br />
 [pmath]sigma[/pmath] = contention <br />
 [pmath]kappa[/pmath] = coherency </p>
-<p>Michael mentioned a book, <a href="http://www.amazon.com/gp/product/3540261389?ie=UTF8&tag=mylibrary01-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540261389">Guerrilla Capacity Planning</a><img src="http://www.assoc-amazon.com/e/ir?t=mylibrary01-20&l=as2&o=1&a=3540261389" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> by Neil Gunther. It covers a lot of the mathematics of scalability and capacity planning.
+<p>Michael mentioned a book, [Guerrilla Capacity Planning](http://www.amazon.com/gp/product/3540261389?ie=UTF8&tag=mylibrary01-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540261389)<img src="http://www.assoc-amazon.com/e/ir?t=mylibrary01-20&l=as2&o=1&a=3540261389" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> by Neil Gunther. It covers a lot of the mathematics of scalability and capacity planning.
 </p>
 <p>There are only two ways to increase scalability: decrease contention or decrease conherency. Why is "improve performance" not on the list? Increasing performance increases capacity. Scalability is the measure of how added resources impact added capacity. Increasing performance can reduce your need for scalability, but does not benefit scalability. An interesting side note was that increasing performance generally means making the serial portion ([pmath]sigma[/pmath]) a larger portion of the total time. This means that as you spend more time on performance, you actually create a situation where you will reach maximum capacity with fewer processing resources. </p>
 <h3>Brewer's Conjecture</h3>You have heard the old quote &lsquo;Faster, better, cheaper&hellip; Pick two&rdquo;? Well when you are talking about systems architecture you can choose at most two of the following: 

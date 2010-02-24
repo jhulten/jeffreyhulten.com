@@ -14,4 +14,4 @@ Today I released the second alpha of version 0.1.0...  How is that for hedging 
 </ul>
 The next alpha version (slated to release in a couple of weeks) will add the beginnings of an indexing system and configuration files.
 
-You can find my little project in its <a href="http://code.tragicallyleet.com/hg/nodedb" target="_blank">source code repository</a> or on <a href="http://pypi.python.org/pypi/nodedb" target="_blank">PyPi</a>.
+You can find my little project in its [source code repository](http://code.tragicallyleet.com/hg/nodedb) or on [PyPi](http://pypi.python.org/pypi/nodedb).

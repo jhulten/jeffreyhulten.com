@@ -10,7 +10,7 @@ I spent the morning talking with Barbee Davis and Suzie Lewis Ship about topics 
 
 <h3>7 Habits of Highly Effective Developers - Ken Sipe</h3>
 
-Ken's session is about applying the <a href="http://www.amazon.com/gp/product/0743269519?ie=UTF8&tag=tragicallyl33-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0743269519">The 7 Habits of Highly Effective People</a><img src="http://www.assoc-amazon.com/e/ir?t=tragicallyl33-20&l=as2&o=1&a=0743269519" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+Ken's session is about applying the [The 7 Habits of Highly Effective People](http://www.amazon.com/gp/product/0743269519?ie=UTF8&tag=tragicallyl33-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0743269519)<img src="http://www.assoc-amazon.com/e/ir?t=tragicallyl33-20&l=as2&o=1&a=0743269519" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
  by Stephen Covey to software developers. 
 
 Covey's seven habits are:
@@ -23,7 +23,7 @@ Covey's seven habits are:
 <li> sharpen the saw</li>
 </ul>
 
-Ken referred to a blog post "<a href="http://www.philosophicalgeek.com/2008/01/20/5-attributes-of-highly-effective-programmers/">Top 5 Attributes of Highly Effective Programmers</a>". The attributes from that post are:
+Ken referred to a blog post "[Top 5 Attributes of Highly Effective Programmers](http://www.philosophicalgeek.com/2008/01/20/5-attributes-of-highly-effective-programmers/)". The attributes from that post are:
 
 <ul>
 <li> Humility</li>
@@ -58,6 +58,6 @@ Clojure is a partial Lisp clone on the JVM with support for software transaction
 
 This was the last panel I attended for the weekend, and a lot of fun. I enjoy thinking about and discussing learning techniques and such.
 
-The only topic I will touch on here is the need for sleep. According to the <a href="http://www.spokane.wsu.edu/ResearchOutreach/Sleep/documents/2003SLP-VanDongen-etal.pdf">research</a> Nate referenced, if you consistently get six hours of sleep when you need eight it is like missing two nights of sleep. Staying up one night results in a 30% drop in cognitive function...
+The only topic I will touch on here is the need for sleep. According to the [research](http://www.spokane.wsu.edu/ResearchOutreach/Sleep/documents/2003SLP-VanDongen-etal.pdf) Nate referenced, if you consistently get six hours of sleep when you need eight it is like missing two nights of sleep. Staying up one night results in a 30% drop in cognitive function...
 
 So go take a nap. A 26 minute nap gives a 34% boost to performance.

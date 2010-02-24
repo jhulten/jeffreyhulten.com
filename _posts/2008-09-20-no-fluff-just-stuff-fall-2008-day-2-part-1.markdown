@@ -6,13 +6,13 @@ wordpress_url: http://tragicallyleet.com/2008/09/20/no-fluff-just-stuff-fall-200
 ---
 I got in today at 0830 for some breakfast, talked with some coworkers and tablemates, then moved out to the first session.
 
-My first session was once again with Jeff Brown of <a href="http://g2one.com" target="_blank">G2One</a>. He talked about Test Driven Development with Groovy and Grails. TDD is one of those things that I know I should do but don't discipline myself to do. Groovy does some nice things that I like from Ruby. Duck-typing is great when you are working with tests. You aren't writing a bunch of interfaces just to make the compiler happy.
+My first session was once again with Jeff Brown of [G2One](http://g2one.com). He talked about Test Driven Development with Groovy and Grails. TDD is one of those things that I know I should do but don't discipline myself to do. Groovy does some nice things that I like from Ruby. Duck-typing is great when you are working with tests. You aren't writing a bunch of interfaces just to make the compiler happy.
 
 Another interesting test piece is the Expando class in GroovyTest.  Expand allows you to create a class that pretends to be anything you need such as a file. Therefore you can test object that, for instance, write to the filesystem without actually writing to the filesystem in your unit test.
 
 Interesting clarification was the differences between mocks and stubs.  Mocks have strong expectations and stubs have loose expectations. The stubs in GroovyTest are slick.  You call new StubFor(class) and get a stub back that you can overload the functionality of, allowing you to change the functionality of a Groovy or Java class for the purpose of your test.
 
-For my second session I had some hard choices to make.  I selected <a href="http://wmrichards.com/" target="_blank">Mark Richards</a> talk on Java Persistence over the Powerful Metaprogramming Techniques with Groovy with Jeff Brown, but it was a tough choice. Mark is a Director and Senior Architect at Collaborative Consulting LLC and the Author of Java Transactional Design Strategies.
+For my second session I had some hard choices to make.  I selected [Mark Richards](http://wmrichards.com/) talk on Java Persistence over the Powerful Metaprogramming Techniques with Groovy with Jeff Brown, but it was a tough choice. Mark is a Director and Senior Architect at Collaborative Consulting LLC and the Author of Java Transactional Design Strategies.
 
 Mark was a dynamic speaker and really engaged people. His focus was that there will never be a silver bullet for persistence.  Each toolset has it's strong points and weak points. He started talking about the types of Java persistence frameworks, specifically Object-Relational Mapper, SQL Mapper and Standards Based Frameworks.
 

@@ -42,7 +42,7 @@ There are some common causes of anti-patterns:
 
 <b>Golden Hammer</b> - using the same tool, product or technique to solve every problem.
 
-With the plethora of languages available on the JVM, we have all kinds of choice. For a comprehensive list of language options, see <a href="http://www.is-research.de/info/vmlanguages/">http://www.is-research.de/info/vmlanguages/</a>
+With the plethora of languages available on the JVM, we have all kinds of choice. For a comprehensive list of language options, see [http://www.is-research.de/info/vmlanguages/](http://www.is-research.de/info/vmlanguages/)
 
 <b>Accidental Complexity</b> - introducing non-essential complexity into a solution.
 

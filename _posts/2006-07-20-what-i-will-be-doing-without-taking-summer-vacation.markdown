@@ -4,7 +4,7 @@ layout: post
 title: What I Will Be Doing Without Taking Summer Vacation
 wordpress_url: http://tragicallyleet.com/2006/07/20/what-i-will-be-doing-without-taking-summer-vacation/
 ---
-So I am attending <a href="http://baker.edu">Baker College Online</a>, which I found on <a href="http://allonlineschools.net">allonlineschools.net</a> (see <a href="#collegepostnote">note</a>). I attended the University of Washington for many years and then ran out of money. Since the job market has gotten tougher I find it more difficult to get the interview.  I can almost always get a job I am qualified for if I can get in the door, but the thinly veiled "college dropout" on my resume was not helping.
+So I am attending [Baker College Online](http://baker.edu), which I found on [allonlineschools.net](http://allonlineschools.net) (see [note](#collegepostnote)). I attended the University of Washington for many years and then ran out of money. Since the job market has gotten tougher I find it more difficult to get the interview.  I can almost always get a job I am qualified for if I can get in the door, but the thinly veiled "college dropout" on my resume was not helping.
 
 As such I am persuing a Associates of Applied Science in Computer Programming.  I have worked out the details and I should be done, attending half time (eight credits per quarter), by Fall 2008.
 

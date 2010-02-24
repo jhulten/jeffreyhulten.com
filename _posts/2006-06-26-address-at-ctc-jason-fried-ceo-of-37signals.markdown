@@ -8,5 +8,5 @@ wordpress_url: http://tragicallyleet.com/2006/06/26/address-at-ctc-jason-fried-c
 
 <blockquote>"Collabrative software turns collaboration into a passive activity, not an active activity."</blockquote>
 
-Check it out <a href="http://www.collaborationloop.com/blogs/ctc-2006-jason-fried-2.htm">here</a>.
+Check it out [here](http://www.collaborationloop.com/blogs/ctc-2006-jason-fried-2.htm).
 

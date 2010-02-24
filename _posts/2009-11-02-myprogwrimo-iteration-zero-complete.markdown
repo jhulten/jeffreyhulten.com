@@ -10,8 +10,8 @@ Yesterday (11/1) I:
 
 <ul>
 	<li>Created a basic project structure using a maven archetype</li>
-	<li>Checked that structure into <a href="http://github.com/jhulten/autoblog">source control</a></li>
-	<li>Setup a Hudson job to run <a href="http://hudson.automatedlabs.com/hudson/job/autoblog/">continuous integration</a></li>
+	<li>Checked that structure into [source control](http://github.com/jhulten/autoblog)</li>
+	<li>Setup a Hudson job to run [continuous integration](http://hudson.automatedlabs.com/hudson/job/autoblog/)</li>
 </ul>
 
 Today I have a light load (since it falls to me to feed the wife). I want to get my first page to render in Tapestry and continue research into the elements I will need like custom dispatching.

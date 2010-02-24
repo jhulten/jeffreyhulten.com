@@ -4,7 +4,7 @@ layout: post
 title: Testing Puppet Parser Functions
 wordpress_url: http://tragicallyleet.com/?p=324
 ---
-I have been working on some parser functions for Puppet. Specifically I was using the example from the <a href="http://reductivelabs.com/trac/puppet/wiki/WritingYourOwnFunctions">wiki</a>:
+I have been working on some parser functions for Puppet. Specifically I was using the example from the [wiki](http://reductivelabs.com/trac/puppet/wiki/WritingYourOwnFunctions):
 
 [sourcecode lang='ruby']
 require 'ipaddr'

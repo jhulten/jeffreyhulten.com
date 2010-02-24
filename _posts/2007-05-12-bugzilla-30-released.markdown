@@ -4,7 +4,7 @@ layout: post
 title: Bugzilla 3.0 Released!
 wordpress_url: http://tragicallyleet.com/2007/05/12/bugzilla-30-released/
 ---
-From the <a href="http://www.bugzilla.org/news/#release30">bugzilla.org website</a>:
+From the [bugzilla.org website](http://www.bugzilla.org/news/#release30):
 
 
 <blockquote>
@@ -24,4 +24,4 @@ Here's just a sampling of the major new features in version 3.0:
 Bugzilla 3.0 also has a much-improved code base over previous versions of Bugzilla. Improvements are still happening, but long-time customizers and coders of Bugzilla will notice significant improvements. And if you haven't seen Bugzilla code since 2.16 or so, prepare to be (pleasantly) surprised!
 </blockquote>
 
-Also check out <a href="http://www.justdave.net/dave/2007/05/10/9-years-from-bugzilla-2-to-3/">this piece</a> from David Miller's blog: "Why did it take Bugzilla 9 years to get from version 2.0 to 3.0?"
+Also check out [this piece](http://www.justdave.net/dave/2007/05/10/9-years-from-bugzilla-2-to-3/) from David Miller's blog: "Why did it take Bugzilla 9 years to get from version 2.0 to 3.0?"

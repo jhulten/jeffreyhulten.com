@@ -72,7 +72,7 @@ Now only if the security manager is enabled, the check is called. He then covere
 
 While my brain did not feel as full as last time, my stomach was empty and I was glad for the lunch break. Buttermilk fried chicken, mashed potatoes and apple pie made for a nice midday meal. 
 
-After lunch one of my coworkers (and one of my groomsmen from my wedding last year) and I went to the "Beginning Drools: Rules Engines in Java" presented by <a href="http://www.nofluffjuststuff.com/conference/speaker/brian_sam-bodden.html">Brian Sam-Bodden</a>. 
+After lunch one of my coworkers (and one of my groomsmen from my wedding last year) and I went to the "Beginning Drools: Rules Engines in Java" presented by [Brian Sam-Bodden](http://www.nofluffjuststuff.com/conference/speaker/brian_sam-bodden.html). 
 
 The real joy of a rule engine is that you can move to fact-based evaluation of code instead of massive nested IF/THEN structures. 
 

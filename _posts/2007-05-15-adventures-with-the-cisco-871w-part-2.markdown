@@ -4,9 +4,9 @@ layout: post
 title: Adventures with the Cisco 871W (Part 2)
 wordpress_url: http://tragicallyleet.com/2007/05/15/adventures-with-the-cisco-871w-part-2/
 ---
-In the <a href="http://tragicallyleet.com/2007/05/10/adventures-with-the-cisco-871w-part-1/">previous post</a>, I got my new Cisco 871W Integrated Services Router attached via serial cable to my laptop and changed the factory default username and password.  Next step, set the router hostname and get the new box talking on my internal network.
+In the [previous post](http://tragicallyleet.com/2007/05/10/adventures-with-the-cisco-871w-part-1/), I got my new Cisco 871W Integrated Services Router attached via serial cable to my laptop and changed the factory default username and password.  Next step, set the router hostname and get the new box talking on my internal network.
 
-First step is to make sure I can recover if something goes wrong.  I found instructions on backing up my config through HyperTerminal or TFTP on <a href="http://www.cisco.com/en/US/products/sw/iosswrel/ps1835/products_tech_note09186a008020260d.shtml">Cisco's site</a>.
+First step is to make sure I can recover if something goes wrong.  I found instructions on backing up my config through HyperTerminal or TFTP on [Cisco's site](http://www.cisco.com/en/US/products/sw/iosswrel/ps1835/products_tech_note09186a008020260d.shtml).
 
 Next we set the hostname and domain.
 [sourcecode language="text"]

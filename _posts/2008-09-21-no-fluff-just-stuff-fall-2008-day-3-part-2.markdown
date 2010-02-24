@@ -6,7 +6,7 @@ wordpress_url: http://tragicallyleet.com/2008/09/21/no-fluff-just-stuff-fall-200
 ---
 After lunch we had the 'expert panel discussion' where the speakers. One of the great quotes was "If you use Eclipse just because it is free we have a name for that... arranged marriage.  You can get some things done, but there is no love."
 
-I then went to "The Busy Developers Guide to Annotations" with <a href="http://tedneward.com" target="_blank">Ted Neward</a> who was on the expert group that defined the annotations facility. After a thought experiment that covered how you would mark a class as Serializable in the old Java 1.1 days we moved to a live code example implementing an annotation on a person object.
+I then went to "The Busy Developers Guide to Annotations" with [Ted Neward](http://tedneward.com) who was on the expert group that defined the annotations facility. After a thought experiment that covered how you would mark a class as Serializable in the old Java 1.1 days we moved to a live code example implementing an annotation on a person object.
 
 The annotation example we developed was a validation annotation.  The annotation sits in front of the thing that it modifies, just like the public keyword. An annotation adds no code to the method or class it modifies, just data that is accessible via reflection. Anything that you can put annotations on has the AnnotationElement interface, including classes and methods, in the reflection API. I learned that annotations have annotations including @Retention, which specifies how long the annotation should be available, either RUNTIME, SOURCE, or CLASS, and @Target which specifies where the annotation can be used, either methods, fields, classes, constructors and more.
 

@@ -4,7 +4,7 @@ layout: post
 title: Balance in All Things
 wordpress_url: http://tragicallyleet.com/2006/10/19/balance-in-all-things/
 ---
-I saw a post about work/personal life balance on <a href="http://positivesharing.com/">http://positivesharing.com/</a> where a comment was posted saying:
+I saw a post about work/personal life balance on [http://positivesharing.com/](http://positivesharing.com/) where a comment was posted saying:
 
 <blockquote>
 Sorry I just don’t get this!! Work is work play is play. I cannot stand it when people “decorate” their cube etc. this is not kindergarden it is a place of work treat it as such.
@@ -26,7 +26,7 @@ My response:
 To say that work is work and play is play is either overly simplistic or not simplistic enough. I would rather simplify this by saying “Life is life”. Sometimes your life is about work and sometimes it is about play, but it is unrealistic to completely seperate your work and personal life. The only way as a IT professional for me to keep my work life completely out of my personal life is to not have a job and the only way to keep my personal life out of my work life is to not have friends, hobbies, hopes, dreams, etc.
 </blockquote>
 
-Follow the conversation <a href="http://positivesharing.com/2006/10/ask-the-cho-whats-with-all-this-happiness-crap/">here</a>.
+Follow the conversation [here](http://positivesharing.com/2006/10/ask-the-cho-whats-with-all-this-happiness-crap/).
 
 
 
