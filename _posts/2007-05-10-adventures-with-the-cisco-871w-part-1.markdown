@@ -17,7 +17,7 @@ First I needed to get the machine into configuration mode.  Since the account (c
 {% highlight test %}
 yourname# configure terminal
 yourname(config)#
-{ endhighlight }
+{% endhighlight %}
 
 There we go!  Now I was in configuration mode.  Now I needed to add my new administrative user and password to the config.
 
