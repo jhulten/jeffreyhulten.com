@@ -5,25 +5,31 @@
   <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print" />
   <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" href="/css/blueprint/plugins/tabs/screen.css" type="text/css" media="screen, projection" />
   
   <link rel="openid.server" href="http://openid.claimid.com/server" />
   <link rel="openid.delegate" href="http://openid.claimid.com/jhulten" />
     
 </head><body>
 <div class="container">
-<div class="span-24 last">
-<h1>Tragically L33T</h1>
+  <div class="span-24 last">
+    <h1>Tragically L33T</h1>
+  </div>
+  <div class="span-24 last">
+    <ul class='tabs'>
+      <li><a href='/'>Blog</a></li>
+      <li><a href='/projects.html'>Projects</a></li>
+      <li><a href='/about.html'>Tragically Me</a></li>
+    </ul>
+  </div>
+  <div class="span-15 colborder">
+    {{ content }}
+  </div>
+  <div class="span-8 last">
+    Sidebar
+  </div>
 </div>
-<div class="span-16">
-{{ content }}
-</div>
-<div class="span-8 last">
-  Sidebar
-</div>
-</div>
-
 <a href="http://github.com/jhulten"><img style="border: 0pt none ; position: absolute; top: 0pt; right: 0pt;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -35,7 +41,6 @@ pageTracker._setDomainName(".tragicallyleet.com");
 pageTracker._trackPageview();
 } catch(err) {}
 </script>
-
 <script type="text/javascript">
 //<![CDATA[
 (function() {
