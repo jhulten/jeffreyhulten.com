@@ -1,1 +1,14 @@
-test
+---
+layout: default
+title: Tragically L33T
+---
+<div class="container">
+{% for post in site.posts limit:5 %}
+  <div class="span-24 last">
+  {{ post.content }}
+  <p class="signoff">
+    &mdash;<a href="{{ post.url }}">{{ post.date | date: "%b %d, %Y" }}</a>
+  </p>
+  </div>
+{% endfor %}
+</div>
