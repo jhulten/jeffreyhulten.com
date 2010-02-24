@@ -1,0 +1,7 @@
+--- 
+wordpress_id: 69
+layout: post
+title: GTD on NPR
+wordpress_url: http://tragicallyleet.com/2008/02/20/gtd-on-npr/
+---
+Merlin Mann reports that <a href="http://43folders.com">43folders.com</a> was mentioned on an <a href="http://www.npr.org/templates/rundowns/rundown.php?prgId=2">All Things Considered</a> discussion about <a href="http://davidco.com/">Getting Things Done</a> on <a href="http://npr.org">NPR</a>.  As such he has provided a '<a href="http://www.43folders.com/2008/02/19/43-folders-best-gtd">Best of GTD</a>' on his blog.  Good reads!

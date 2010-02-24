@@ -1,0 +1,17 @@
+--- 
+wordpress_id: 389
+layout: post
+title: MyProgWriMo - Iteration Zero Complete
+wordpress_url: http://tragicallyleet.com/?p=389
+---
+Many agile folks will talk about Iteration Zero: the stuff you have to do before you can do stuff. Mine is complete.
+
+Yesterday (11/1) I:
+
+<ul>
+	<li>Created a basic project structure using a maven archetype</li>
+	<li>Checked that structure into <a href="http://github.com/jhulten/autoblog">source control</a></li>
+	<li>Setup a Hudson job to run <a href="http://hudson.automatedlabs.com/hudson/job/autoblog/">continuous integration</a></li>
+</ul>
+
+Today I have a light load (since it falls to me to feed the wife). I want to get my first page to render in Tapestry and continue research into the elements I will need like custom dispatching.
