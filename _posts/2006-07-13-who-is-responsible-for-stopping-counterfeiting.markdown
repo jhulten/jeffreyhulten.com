@@ -14,7 +14,7 @@ This puts government in a bad spot, but penalizing the many for the actions of t
 
 References:
 
-Wikipedia Foundation (2006). Sony Corp. of America v. Universal City Studios, Inc. [[WWW Page](http://en.wikipedia.org/wiki/Sony_Corp._v._Universal_City_Studios)]. 
+Wikipedia Foundation (2006). Sony Corp. of America v. Universal City Studios, Inc. [WWW Page](http://en.wikipedia.org/wiki/Sony_Corp._v._Universal_City_Studios). 
 
-U.S. Supreme Court (1984). Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 417 [[WWW Page](http://caselaw.lp.findlaw.com/scripts/getcase.pl?navby=CASE&court=US&vol=464&page=417)]. 
+U.S. Supreme Court (1984). Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 417 [WWW Page](http://caselaw.lp.findlaw.com/scripts/getcase.pl?navby=CASE&court=US&vol=464&page=417). 
 

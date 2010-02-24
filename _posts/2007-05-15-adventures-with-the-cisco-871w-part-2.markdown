@@ -9,23 +9,23 @@ In the [previous post](http://tragicallyleet.com/2007/05/10/adventures-with-the-
 First step is to make sure I can recover if something goes wrong.  I found instructions on backing up my config through HyperTerminal or TFTP on [Cisco's site](http://www.cisco.com/en/US/products/sw/iosswrel/ps1835/products_tech_note09186a008020260d.shtml).
 
 Next we set the hostname and domain.
-[sourcecode language="text"]
+{% highlight %}
 yourname# configure terminal
 yourname(config)# hostname fw
 fw(config)#
-[/sourcecode]
+{% endhighlight %}
 
 Notice the hostname change took effect immediately.
 
-[sourcecode language="text"]
+{% highlight %}
 fw(config)# ip domain name domain.com
 fw(config)# exit
 fw# copy running-config startup-config
-[/sourcecode]
+{% endhighlight %}
 
 Now the new hostname and domain name are saved to the startup configuration.  Next up, setting the network information.
 
-[sourcecode language="text"]
+{% highlight %}
 fw#show ip interface
 FastEthernet0 is up, line protocol is down
   Internet protocol processing disabled
@@ -46,19 +46,19 @@ Vlan1 is up, line protocol is down
 Virtual-Dot11Radio0 is administratively down, line protocol is down
   Internet protocol processing disabled
 fw#
-[/sourcecode]
+{% endhighlight %}
 
-[sourcecode language="text"]
+{% highlight %}
 fw#show vlans 
 
 No Virtual LANs configured.
 
 fw#
-[/sourcecode]
+{% endhighlight %}
 
 Wait a second!  "No Virtual LANs configured"?   The interfaces show Vlan1 is up?
 
-[sourcecode language="text"]
+{% highlight %}
 fw#show vlan-switch
 VLAN Name                             Status    Ports
 ---- -------------------------------- --------- -------------------------------
@@ -77,11 +77,11 @@ VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
 1005 trnet 101005     1500  -      -      1        ibm  -        0      0   
 
 fw#
-[/sourcecode]
+{% endhighlight %}
 
 Aha!  Vlan1 is the default Virtual LAN and all ports are assigned to it.  Since I do not have the Advanced IP Services Cisco IOS Software Image I cannot add more Virtual LANs.  With Advanced IP Services I can have up to four VLANs on the 871W.  Looks like I need to configure the default VLAN.
 
-[sourcecode language="text"]
+{% highlight %}
 fw#configure terminal
 Enter configuration commands, one per line.  End with CNTL/Z.
 fw(config)#interface Vlan1
@@ -91,6 +91,6 @@ fw(config-if)#exit
 fw(config)#exit
 fw# copy running-config startup-config
 fw#
-[/sourcecode]
+{% endhighlight %}
 
 Now all the internal interfaces on my router are configured to the 192.168.69.0/24 network.  Next up, setting up the DHCP server!

@@ -20,19 +20,19 @@ An interesting point from Venkat is to initially ignore the syntax of a language
 
 His first example was from erlang, which is a pure functional language but not on the JVM.
 
-[sourcecode language="erlang"]
+{% highlight erlang %}
 main(_) -> io:format("~p", [double([1,2,3,4,5])).
 double(L) -> lists:map(fun(E) -> E * 2 end, L).
-[/sourcecode]
+{% endhighlight %}
 
 This takes the array 1 to 5 and runs the double function, then passes it to io:format to print to the console. The double function runs lists:map to run every element of the array and executes the anonymous function to double the value of each element.
 
 Scala is a functional programming language that runs in the JVM.  You can write Java like code in Scala, but you lose the concurrence protection.
 
-[sourcecode language="scala"]
+{% highlight scala %}
 val lst = List(1,2,3,4,5)
 println(lst.map(_ * 2))
-[/sourcecode]
+{% endhighlight %}
 
 This is the same functionally (no pun intended) as the erlang code above.
 

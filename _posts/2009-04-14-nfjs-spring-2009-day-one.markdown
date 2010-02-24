@@ -32,7 +32,9 @@ Once you have broken your methods up you can see if there are common pieces you 
 
 The second building block was SLAP or the Single Layer of Abstraction Principle. The key of this idea is that crossing layers of abstraction, like from business logic to database logic, within one method is difficult to visualize and probably a good candidate for refactoring.
 
-<blockquote>"Refactoring is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior." -- Martin Fowler</blockquote>
+<blockquote>
+"Refactoring is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior." -- Martin Fowler
+</blockquote>
 
 Moving on he talked about decomposition, specifically taking large classes and breaking them down and decoupling from vendor libraries. It was a little complicated to try and explain which probably means I still don't understand it entirely. He did state that you should not decompose large things just because you can, they may not be evil. For example, the object representing your most important and strategic concept will probably be large and you may break the conversation with your business owners.
 
