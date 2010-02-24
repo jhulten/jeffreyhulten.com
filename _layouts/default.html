@@ -5,6 +5,10 @@
   <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print" />
   <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+  <script type="text/javascript">
+  var disqus_developer = 1;
+  </script>
 </head><body>
 <div class="container">
 <div class="span-24 last">
@@ -12,6 +16,8 @@
 </div>
 {{ content }}
 </div>
+
+<a href="http://github.com/jhulten"><img style="border: 0pt none ; position: absolute; top: 0pt; right: 0pt;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -24,5 +30,20 @@ pageTracker._setDomainName(".tragicallyleet.com");
 pageTracker._trackPageview();
 } catch(err) {}
 </script>
-<a href="http://github.com/jhulten"><img style="border: 0pt none ; position: absolute; top: 0pt; right: 0pt;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+	var links = document.getElementsByTagName('a');
+	var query = '?';
+	for(var i = 0; i < links.length; i++) {
+	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+	}
+	}
+	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/tragicallyleet/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
+
 </body></html>
