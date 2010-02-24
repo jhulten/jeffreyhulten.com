@@ -14,21 +14,21 @@ I logged in with the credentials provided and then floundered about for a bit tr
 
 First I needed to get the machine into configuration mode.  Since the account (cisco) that I logged in with was already at privilege level 15 I did not need to enable privileged EXEC mode.
 
-{% highlight %}
+{% highlight test %}
 yourname# configure terminal
 yourname(config)#
 { endhighlight }
 
 There we go!  Now I was in configuration mode.  Now I needed to add my new administrative user and password to the config.
 
-{% highlight %}
+{% highlight test %}
 yourname(config)# username <em>admuser</em> privilege 15 secret 0 <em>secretpasswd</em>
 yourname(config)#
 {% endhighlight %}
 
 Now I could log out of the cisco account and into the admuser account.
 
-{% highlight %}
+{% highlight test %}
 yourname(config)# exit
 yourname# exit
 Press RETURN to get started.
@@ -40,7 +40,7 @@ yourname#
 
 We have access as the admuser account, however the cisco account still exists.   Need to fix that...
 
-{% highlight %}
+{% highlight test %}
 yourname# configure terminal
 yourname(config)# no username cisco
 yourname(config)#
@@ -48,7 +48,7 @@ yourname(config)#
 
 Much better.  Now, as you may know, when you have made a change to a Cisco IOS config, you are editing the running configuration.  This means that we need to save the running configuration.  Prompt more floundering on my part until I realize that you cannot save the configuration in config mode.
 
-{% highlight %}
+{% highlight test %}
 yourname(config)# exit
 yourname# copy running-config startup-config
 Destination filename [startup-config]? ENTER

@@ -9,7 +9,7 @@ In the [previous post](http://tragicallyleet.com/2007/05/10/adventures-with-the-
 First step is to make sure I can recover if something goes wrong.  I found instructions on backing up my config through HyperTerminal or TFTP on [Cisco's site](http://www.cisco.com/en/US/products/sw/iosswrel/ps1835/products_tech_note09186a008020260d.shtml).
 
 Next we set the hostname and domain.
-{% highlight %}
+{% highlight test %}
 yourname# configure terminal
 yourname(config)# hostname fw
 fw(config)#
@@ -17,7 +17,7 @@ fw(config)#
 
 Notice the hostname change took effect immediately.
 
-{% highlight %}
+{% highlight test %}
 fw(config)# ip domain name domain.com
 fw(config)# exit
 fw# copy running-config startup-config
@@ -25,7 +25,7 @@ fw# copy running-config startup-config
 
 Now the new hostname and domain name are saved to the startup configuration.  Next up, setting the network information.
 
-{% highlight %}
+{% highlight test %}
 fw#show ip interface
 FastEthernet0 is up, line protocol is down
   Internet protocol processing disabled
@@ -48,7 +48,7 @@ Virtual-Dot11Radio0 is administratively down, line protocol is down
 fw#
 {% endhighlight %}
 
-{% highlight %}
+{% highlight test %}
 fw#show vlans 
 
 No Virtual LANs configured.
@@ -58,7 +58,7 @@ fw#
 
 Wait a second!  "No Virtual LANs configured"?   The interfaces show Vlan1 is up?
 
-{% highlight %}
+{% highlight test %}
 fw#show vlan-switch
 VLAN Name                             Status    Ports
 ---- -------------------------------- --------- -------------------------------
@@ -81,7 +81,7 @@ fw#
 
 Aha!  Vlan1 is the default Virtual LAN and all ports are assigned to it.  Since I do not have the Advanced IP Services Cisco IOS Software Image I cannot add more Virtual LANs.  With Advanced IP Services I can have up to four VLANs on the 871W.  Looks like I need to configure the default VLAN.
 
-{% highlight %}
+{% highlight test %}
 fw#configure terminal
 Enter configuration commands, one per line.  End with CNTL/Z.
 fw(config)#interface Vlan1
