@@ -62,6 +62,6 @@ thing_ids = Hash.new
 } 
 %>
 <%= @final.to_yaml %>
-{% endhightlight %}
+{% endhighlight %}
 
 To test, run <code>erb thing.yml</code> and see your output.  No more hand coding of ids and hoping you didn't put something in the wrong place!
