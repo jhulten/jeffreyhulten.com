@@ -20,7 +20,7 @@ before_filter {|c|
 Then you can use it in any controller as follows:
 
 {% highlight ruby %}
-class BlogController < ActionController::Base   
+class BlogController &lt; ActionController::Base   
   def index     
     render_text account.subdomain   
   end 
