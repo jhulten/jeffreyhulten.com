@@ -8,7 +8,7 @@ So I am working on a Rails project that revolves around an acts_as_tree using si
 
 Since the YAML fixtures in ruby are parsed through eRb first, I thought I would give this a try.  I made a file called thing_data.yml with my fixtures like so:
 
-<pre lang="yaml">
+{% highlight yaml %}
 root:
   name: root item
   parent_id:
@@ -21,11 +21,11 @@ second_branch:
 a_leaf:
   name: a leaf on the wind
   parent_id: first_branch
-</pre>
+{% endhighlight %}
 
 Notice the utter lack of ids.  Now with a little eRb magic we put the following in the yaml file you plan to load as your fixture.  Lets call it thing.yml:
 
-<pre lang='ruby'>
+{% highlight erb %}
 <%
 
 id_key = 1
@@ -62,6 +62,6 @@ thing_ids = Hash.new
 } 
 %>
 <%= @final.to_yaml %>
-</pre>
+{% endhightlight %}
 
 To test, run <code>erb thing.yml</code> and see your output.  No more hand coding of ids and hoping you didn't put something in the wrong place!
