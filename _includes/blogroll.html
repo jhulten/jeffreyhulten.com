@@ -1,0 +1,8 @@
+{% for roll in site.blogroll %}
+  <h3>{{ roll.title }}</h3>
+  <ul>
+  {% for item in roll.entries %}
+    <li><a href="{{ item.url }}" rel="{{ item.rel }}">{{ item.name }}</a></li>  
+  {% endfor %}
+  </ul>
+{% endfor %}

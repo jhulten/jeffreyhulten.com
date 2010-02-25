@@ -4,3 +4,17 @@ exclude:
 - README
 - Rakefile
 - lib
+blogroll:
+- title: Friends and Family
+  entries:
+  - url: http://stillseekingsanity.blogspot.com/
+    name: My Sisters Blog - Still Seeking Sanity
+    rel: friend met sibling
+- title: Puppet Devs
+  entries:
+  - url: http://stochasticresonance.wordpress.com
+    name: Andrew Shafer of Reductive Labs
+    rel: acquaintance colleague
+  - url: http://madstop.com/
+    name: Luke Kanies of Reductive Labs
+    rel: acquaintance colleague
