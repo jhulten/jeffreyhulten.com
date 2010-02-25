@@ -3,6 +3,7 @@ wordpress_id: 7
 layout: post
 title: Using Subdomains as Account Keys
 wordpress_url: http://tragicallyleet.com/2006/06/07/using-subdomains-as-account-keys/
+category: rails
 ---
 I looked all over for an explanation on how to use the domain or subdomain as the account key (a la campfirenow.com) and now I have it...<!--more-->
 

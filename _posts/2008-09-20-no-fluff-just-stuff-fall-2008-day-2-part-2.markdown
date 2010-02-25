@@ -24,23 +24,19 @@ He had a simple definition of performance and scalability. Performance is how fa
 
 His steps were pretty straightforward:
 
-<ul>
-<li>Know your performance and scalability goals.</li>
-<li>Avoid the pitfalls of assumptions.</li>
-<li>Measure, measure, measure.</li>
-<li>Refactor or redesign as necessary.</li>
-</ul>
+- Know your performance and scalability goals.
+- Avoid the pitfalls of assumptions.
+- Measure, measure, measure.
+- Refactor or redesign as necessary.
 
 The base assumptions to avoid are pretty obvious, but as developers we seem to ignore:
 
-<ul>
-<li>Myth: bandwidth is infinite</li>
-<li>Myth: latency is zero</li>
-<li>Myth: transport cost is zero</li>
-<li>Myth: topology doesn't change</li>
-<li>Myth: the system is homogeneous</li>
-<li>Myth: you &quot;know&quot; where slowdowns and bottlenecks are</li>
-</ul>
+- Myth: bandwidth is infinite
+- Myth: latency is zero
+- Myth: transport cost is zero
+- Myth: topology doesn't change
+- Myth: the system is homogeneous
+- Myth: you &quot;know&quot; where slowdowns and bottlenecks are
 
 These are all great points to remember are NOT true. If you look at the difference between google.com and amazon.com home pages are a great example of myth one. Amazon seems to think that bandwidth is infinite, where Google understands that it is not!
 

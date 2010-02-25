@@ -20,7 +20,7 @@ I am an odd duck. I think like a scientist and engineer, but can talk like a bus
 
 ### No. 3 -- Ask guiding questions. If you get in a battle of wills, you have already lost.
 
-A question is a powerful thing. I believe it was Pablo Picasso that said,        "<em>Computers are useless. They can only give you answers.</em>"  Having the humility to ask a question allows you to shape to conversation or debate without creating combat. "<em>Never <em>argue with an idiot</em>. They’ll drag you down to their level then beat you with experience.</em>"
+A question is a powerful thing. I believe it was Pablo Picasso that said, "*Computers are useless. They can only give you answers.*" Having the humility to ask a question allows you to shape to conversation or debate without creating combat. "*Never argue with an idiot. They’ll drag you down to their level then beat you with experience.*"
 
 ### No. 4 -- Keep your tools fresh. They will rust without use.
 

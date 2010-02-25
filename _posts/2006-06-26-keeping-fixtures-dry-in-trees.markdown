@@ -4,7 +4,7 @@ layout: post
 title: Keeping Fixtures DRY in Trees
 wordpress_url: http://tragicallyleet.com/2006/06/26/keeping-fixtures-dry-in-trees/
 ---
-So I am working on a Rails project that revolves around an acts_as_tree using single table inheritence (STI).  I got tired REALLY quickly with figuring out what id to use for each parent_id field.  I figured that in the spirit of Don't Repeat Yourself I would come up with a DRY way to specify the parents that did not require reapplying the id's to the fixtures when I change things.
+So I am working on a Rails project that revolves around an acts\_as\_tree using single table inheritance (STI).  I got tired REALLY quickly with figuring out what id to use for each parent_id field.  I figured that in the spirit of Don't Repeat Yourself I would come up with a DRY way to specify the parents that did not require reapplying the id's to the fixtures when I change things.
 
 Since the YAML fixtures in ruby are parsed through eRb first, I thought I would give this a try.  I made a file called thing_data.yml with my fixtures like so:
 
@@ -64,4 +64,4 @@ thing_ids = Hash.new
 <%= @final.to_yaml %>
 {% endhighlight %}
 
-To test, run <code>erb thing.yml</code> and see your output.  No more hand coding of ids and hoping you didn't put something in the wrong place!
+To test, run `erb thing.yml` and see your output.  No more hand coding of ids and hoping you didn't put something in the wrong place!
