@@ -4,7 +4,7 @@ layout: post
 title: NFJS Spring 2009 - Day One
 wordpress_url: http://tragicallyleet.com/?p=294
 ---
-<em>NOTE: I am posting these entries a week and a half after the Spring 2009 event in Seattle due to time constraints in editing and such.</em>
+*NOTE: I am posting these entries a week and a half after the Spring 2009 event in Seattle due to time constraints in editing and such.*
 
 It's my first time as an Alumni at a [No Fluff Just Stuff](http://nofluffjuststuff.com) conference. Attendance is smaller than the Fall '08 show, but I understand that is pretty typical. I am glad to see that this conference is surviving in the lean times.
 
