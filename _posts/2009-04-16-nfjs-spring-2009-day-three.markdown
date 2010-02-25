@@ -12,7 +12,7 @@ I got in a little late today after grabbing coffee and headed to [Michael Nygard
 
 ### Amdahl's Law
 
-[pmath]T_p=sigmaT_1+{(1-sigma)T_1/p}[/pmath] 
+$$ T_p = \sigma T_1 + ( 1 - \sigma ) \frac{T_1}{p} $$ 
 
 #### Speedup Ratio
 
