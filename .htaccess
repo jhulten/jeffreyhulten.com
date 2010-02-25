@@ -1,0 +1,9 @@
+# Remove the www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Roll l33t to leet
+RewriteCond %{HTTP_HOST} ^tragicallyl33t.com$ [NC]
+RewriteRule ^(.*)$ http://tragicallyleet.com/$1 [R=301,L]
+
+
