@@ -4,12 +4,12 @@ def jekyll(opts = "", path = "")
 end
  
 desc "Build site using Jekyll"
-task :site do
+task :site => [:build] do
   jekyll
 end
  
 desc "Serve on Localhost with port 4000"
-task :serve do
+task :serve => [:build] do
   jekyll("--server --auto")
 end
  
@@ -41,5 +41,7 @@ task :tags do
   puts 'Done.'
 end
 
-task :default => [:tags, :serve]
+task :build => [:tags]
+
+task :default => [:serve]
 
