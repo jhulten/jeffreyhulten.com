@@ -7,5 +7,5 @@ RewriteCond %{HTTP_HOST} ^tragicallyl33t.com$ [NC]
 RewriteRule ^(.*)$ http://tragicallyleet.com/$1 [R=301,L]
 
 # tag/cisco/ to tags/cisco.html
-RewriteRule ^/tag/(.*)/?$ http://tragicallyleet.com/tags/$1.html [R=301,L]
+RewriteRule ^tag/(.*)/?$ http://tragicallyleet.com/tags/$1.html [R=301,L]
 

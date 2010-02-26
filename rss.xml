@@ -13,7 +13,7 @@ layout: nil
  
 <channel> 
 	<title>Tragically L33T</title> 
-	<atom:link href="http://tragicallyleet.com/feed.xml" rel="self" type="application/rss+xml" /> 
+	<atom:link href="http://tragicallyleet.com/rss.xml" rel="self" type="application/rss+xml" /> 
 	<link>http://tragicallyleet.com</link> 
 	<description></description> 
 	<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S -0800" }}</lastBuildDate> 
@@ -21,7 +21,7 @@ layout: nil
 	<language>en</language> 
 	<sy:updatePeriod>daily</sy:updatePeriod> 
 	<sy:updateFrequency>4</sy:updateFrequency> 
-{% for post in site.posts %}
+{% for post in site.posts limit:10 %}
 	<item> 
 		<title>{{ post.title | xml_escape }}</title> 
 		<link>http://tragicallyleet.com{{ post.url }}</link> 
@@ -31,7 +31,7 @@ layout: nil
 		{% for cat in post.categories %}
 		<category><![CDATA[{{ cat }}]]></category> 
       {% endfor %}
-		<guid isPermaLink="true">http://tragicallyleet.com{{ post.permalink }}</guid> 
+		<guid isPermaLink="true">http://tragicallyleet.com{{ post.url }}</guid> 
 		<description>{{ post.content | strip_html | truncatewords: 50 }}</description> 
 		<content:encoded><![CDATA[ {{ post.content  }} ]]></content:encoded> 
 		</item> 
