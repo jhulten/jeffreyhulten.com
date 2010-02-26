@@ -1,3 +1,21 @@
+pre, code { 	
+    display: block; 	
+    margin: 25px 0; 
+    padding: 15px; 
+	background:#F5F5F5 none repeat scroll 0 0;
+	border:1px solid #DADADA;
+	font-size: 12px;
+	font-family:Consolas,Monaco,"Courier New",Courier,monospace;
+	overflow: auto;	
+    } 
+p > code { 	
+	font-size: 1.0em;
+	line-height: 1.2em;
+    }   
+pre code { 
+	border: none; 
+}
+
 .highlight { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
