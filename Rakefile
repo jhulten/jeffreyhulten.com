@@ -41,6 +41,31 @@ task :tags do
   puts 'Done.'
 end
 
+desc 'create a new post in draft mode'
+task :new => [:require_input] do
+  title = ask("Title: ")
+  filename = title.downcase.gsub(/[^a-z0-9]/,"-")
+  template=File.read "lib/post_template.markdown"
+  File.open("_drafts/#{filename}.markdown", 'w+') do |f| 
+    f << template.gsub(/POST_TITLE/, title)
+  end
+  sh "git add _drafts/#{filename}.markdown"
+end
+
+desc 'publish an existing post' 
+task :publish do
+  puts "Doesn't do anything yet..."
+end
+
+task :require_input do
+  begin
+    require 'highline/import'
+  rescue LoadError => e
+    puts "\n ~ FATAL: highline gem is required."
+    exit(1)
+  end
+end
+
 task :build => [:tags]
 
 task :default => [:serve]
