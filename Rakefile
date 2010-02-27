@@ -73,11 +73,11 @@ task :tagcloud do
   site.read_posts('')
 
   html =<<-HTML
-  ---
-  layout: default
-  title: Tag cloud
-  ---
-  <h2>Tag cloud</h2>
+---
+layout: default
+title: Tag cloud
+---
+<h2>Tag cloud</h2>
 
   HTML
   site.categories.sort.each do |category, posts|
