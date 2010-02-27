@@ -73,12 +73,8 @@ task :tagcloud do
   site.read_posts('')
 
   html =<<-HTML
----
-layout: default
-title: Tag cloud
----
-<h3>Tag cloud</h3>
-<div class="tagcloud" style="text-align: center">
+  <h3>Tag cloud</h3>
+  <div style="text-align: center">
   HTML
   site.categories.sort.each do |category, posts|
     s = posts.count
