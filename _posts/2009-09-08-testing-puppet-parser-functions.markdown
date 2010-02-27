@@ -3,6 +3,10 @@ wordpress_id: 324
 layout: post
 title: Testing Puppet Parser Functions
 wordpress_url: http://tragicallyleet.com/?p=324
+categories:
+- ruby
+- puppet
+- testing
 ---
 I have been working on some parser functions for Puppet. Specifically I was using the example from the [wiki](http://reductivelabs.com/trac/puppet/wiki/WritingYourOwnFunctions):
 

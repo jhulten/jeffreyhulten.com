@@ -3,6 +3,9 @@ wordpress_id: 204
 layout: post
 title: Weekly Routine
 wordpress_url: http://tragicallyleet.com/?p=204
+categories:
+- productivity
+- routine
 ---
 You may have seen my [daily routine](/2009/02/24/daily-routine/) a while back. On top of having a daily routine, I find its important to have a weekly routine as well. My weekly routine is for things that I don't want to tackle every day (I am tired when I get home from work and don't want to spend my time paying bills) but need to get done regularly.
 

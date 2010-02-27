@@ -3,6 +3,10 @@ wordpress_id: 122
 layout: post
 title: "No Fluff Just Stuff: Fall 2008 - Day 3 - Part 1"
 wordpress_url: http://tragicallyleet.com/2008/09/21/no-fluff-just-stuff-fall-2008-day-3-part-1/
+categories:
+- maven
+- nfjs
+- java
 ---
 
 I got in a little late today, about 0845, which meant a fast breakfast and then off to the first session: Managing Project Integrity with David Bock of [CodeSherpas](http://codesherpas.com). This session was a whirlwind tour of tools to provide greater management and documentation of your code, from Maven to jDepend, Xradar to PMD. I didn't have power for my laptop and the battery was near dead so I don't have a lot of notes on the topic, but I do have a few ideas.

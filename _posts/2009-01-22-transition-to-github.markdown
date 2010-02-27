@@ -3,6 +3,9 @@ wordpress_id: 132
 layout: post
 title: Transition to GitHub
 wordpress_url: http://tragicallyleet.com/?p=132
+categories:
+- git
+- scm
 ---
 I have been making the transition from local Subversion and Mercurial repositories to [Git](http://git-scm.com/) and [GitHub](http://github.com/). GitHub is a brilliant piece of software as a service. It provides hosting for public and (for a fee) private repositories, adds a social media aspect in allowing you to follow fellow programmers work, and fork their repositories.
 

@@ -4,7 +4,7 @@ layout: post
 title: Code Review On The Web
 wordpress_url: http://tragicallyleet.com/2008/05/23/90/
 ---
-<strong>Mondrian Code Review On The Web</strong>
+**Mondrian Code Review On The Web**
 
 Here is an interesting video of [Guido van Rossum](http://www.python.org/~guido/) talking about a code review project he built out at Google.
 

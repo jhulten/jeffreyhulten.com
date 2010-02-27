@@ -3,6 +3,13 @@ wordpress_id: 113
 layout: post
 title: "No Fluff Just Stuff: Fall 2008 - Day 2 - Part 1"
 wordpress_url: http://tragicallyleet.com/2008/09/20/no-fluff-just-stuff-fall-2008-day-2-part-1/
+categories:
+- nfjs
+- tdd
+- groovy
+- grails
+- metaprogramming
+- orm
 ---
 I got in today at 0830 for some breakfast, talked with some coworkers and tablemates, then moved out to the first session.
 

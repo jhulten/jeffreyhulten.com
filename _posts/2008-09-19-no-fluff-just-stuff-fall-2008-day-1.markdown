@@ -3,6 +3,11 @@ wordpress_id: 103
 layout: post
 title: "No Fluff Just Stuff: Fall 2008 - Day 1"
 wordpress_url: http://tragicallyleet.com/?p=103
+categories:
+- nfjs
+- groovy
+- grails
+- java
 ---
 It has been an interesting day. I talked my boss into letting me use my annual 'tuition' reimbursement to attend the Pacific Northwest Software Symposium put on my [No Fluff Just Stuff](http://nofluffjuststuff.com) in Redmond. The conference is different in that they cover hard core topics with no marketing spin. They do not have an expo hall, just breakout room with speakers that know their stuff.
 

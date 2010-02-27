@@ -3,6 +3,11 @@ wordpress_id: 125
 layout: post
 title: "No Fluff Just Stuff: Fall 2008 - Day 3 - Part 2"
 wordpress_url: http://tragicallyleet.com/2008/09/21/no-fluff-just-stuff-fall-2008-day-3-part-2/
+categories:
+- nfjs
+- java
+- annotations
+- functionalprogramming
 ---
 After lunch we had the 'expert panel discussion' where the speakers. One of the great quotes was "If you use Eclipse just because it is free we have a name for that... arranged marriage. You can get some things done, but there is no love."
 

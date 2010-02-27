@@ -3,6 +3,10 @@ wordpress_id: 389
 layout: post
 title: MyProgWriMo - Iteration Zero Complete
 wordpress_url: http://tragicallyleet.com/?p=389
+categories:
+- myprogwrimo
+- java
+- maven
 ---
 Many agile folks will talk about Iteration Zero: the stuff you have to do before you can do stuff. Mine is complete.
 

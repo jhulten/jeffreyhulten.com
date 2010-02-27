@@ -3,6 +3,11 @@ wordpress_id: 394
 layout: post
 title: MyProgWriMo - Day 2 - Lessons Learned
 wordpress_url: http://tragicallyleet.com/?p=394
+categories:
+- myprogwrimo
+- java
+- tapestry
+- hibernate
 ---
 This is going to be harder and easier than I thought.
 

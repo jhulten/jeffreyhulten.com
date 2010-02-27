@@ -3,6 +3,12 @@ wordpress_id: 339
 layout: post
 title: NFJS - Fall 2009 - Day One
 wordpress_url: http://tragicallyleet.com/2009/09/21/nfjs-fall-2009-day-one-2/
+categories:
+- nfjs
+- java
+- antipatterns
+- groovy
+- testing
 ---
 Its that time again! The No Fluff Just Stuff : Pacific Northwest Software Symposium has returned to the Redmond Marriot.
 

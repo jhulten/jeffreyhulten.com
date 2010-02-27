@@ -3,6 +3,15 @@ wordpress_id: 304
 layout: post
 title: NFJS Spring 2009 - Day Three
 wordpress_url: http://tragicallyleet.com/?p=304
+categories:
+- nfjs
+- architecture
+- capacityplanning
+- scalability
+- aws
+- ec2
+- java
+- memorymanagement
 ---
 NOTE: I delayed posting these entries to clean up my notes and add some useful links.
 
@@ -18,54 +27,49 @@ $$ T_p = \sigma T_1 + ( 1 - \sigma ) \frac{T_1}{p} $$
 
 [pmath]S_p=T_1/1+sigma(p-1) [/pmath] 
 
-###Universal Scalability Law
+### Universal Scalability Law
 
 [pmath]C_p=p/1+sigma(p-1)+kappa p(p-1)[/pmath]
 where
 [pmath]sigma[/pmath] = contention
 [pmath]kappa[/pmath] = coherency
 
-Michael mentioned a book, [Guerrilla Capacity Planning](http://www.amazon.com/gp/product/3540261389?ie=UTF8&tag=mylibrary01-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540261389)<img src="http://www.assoc-amazon.com/e/ir?t=mylibrary01-20&l=as2&o=1&a=3540261389" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> by Neil Gunther. It covers a lot of the mathematics of scalability and capacity planning.
+Michael mentioned a book, [Guerrilla Capacity Planning](http://www.amazon.com/gp/product/3540261389?ie=UTF8&tag=mylibrary01-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540261389) by Neil Gunther. It covers a lot of the mathematics of scalability and capacity planning.
 
 There are only two ways to increase scalability: decrease contention or decrease conherency. Why is "improve performance" not on the list? Increasing performance increases capacity. Scalability is the measure of how added resources impact added capacity. Increasing performance can reduce your need for scalability, but does not benefit scalability. An interesting side note was that increasing performance generally means making the serial portion ([pmath]sigma[/pmath]) a larger portion of the total time. This means that as you spend more time on performance, you actually create a situation where you will reach maximum capacity with fewer processing resources.
 
 ### Brewer's Conjecture
 
-You have heard the old quote &lsquo;Faster, better, cheaper&hellip; Pick two&rdquo;? Well when you are talking about systems architecture you can choose at most two of the following: 
+You have heard the old quote "Faster, better, cheaper... Pick two"? Well when you are talking about systems architecture you can choose at most two of the following: 
 
-<ul>
-<li>Consistency</li>
-<li>Availability</li>
-<li>Partition-Tolerance</li>
-</ul>
+- Consistency
+- Availability
+- Partition-Tolerance
 
 Lets look at Michael's definitions: 
 
-<dl>
-<dt>Consistency</dt>
-<dd>There exists a total ordering on all operations, and all nodes in the system agree on that ordering at every point in time.</dd>
-<dt>Availability</dt>
-<dd>Every request received by a non-failing node must result in a response</dd>
-<dt>Partition-Tolerance</dt>
-<dd>The network may lose arbitrarily many messages from any subset of nodes to any other subset of nodes.</dd>
-</dl>
+Consistency:
+  There exists a total ordering on all operations, and all nodes in the system agree on that ordering at every point in time.
+Availability:
+  Every request received by a non-failing node must result in a response
+Partition-Tolerance:
+  The network may lose arbitrarily many messages from any subset of nodes to any other subset of nodes.
 
 You want your system to be consistent and available? Partitioning is not allowed. How are you going to prevent partitioning? Do you expect servers, switches and network cards to never fail? This is unrealistic.
 
-You want your system to be consistent and partitionable? Consistency can only be guarenteed if the service is unavailble during partitions. Otherwise you end up with 'split-brain'.
+You want your system to be consistent and partitionable? Consistency can only be guaranteed if the service is unavailable during partitions. Otherwise you end up with 'split-brain'.
 
-You want your system to be available and partionable? We maintain availablity during partitions by allowing different subsets to report different histories. This means that agreement or syncronization protocols are forbidden.
+You want your system to be available and partitionable? We maintain availability during partitions by allowing different subsets to report different histories. This means that agreement or synchronization protocols are forbidden.
 
-An important note: when you use and rely on ACID compliance of a relational database, you inherently select <b>Consistency</b>.
+An important note: when you use and rely on ACID compliance of a relational database, you inherently select **Consistency**.
 
-<blockquote>
-"If you can't split it, you can't scale it." -- Randy Shoup, eBay
-</blockquote>
+> "If you can't split it, you can't scale it." -- Randy Shoup, eBay
 
 All partitioning strategies assume no cross-cluster dependencies on shared data. Shared writable data requires serialized access which raised [pmath]sigma[/pmath].
 
-The database theory example for ACID compliance of a bank transaction is flawed as soon as User A and User B are with different banks. Instead of 'always consistent' we need to think about 'eventually consistent'. </p>
-<a href="http://www.amazon.com/gp/product/0978739213?ie=UTF8&tag=tragicallyl33-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0978739213"><img border="0" src="https://images-na.ssl-images-amazon.com/images/I/41Nb-knuW-L._SL160_.jpg" align="right"></a><img src="http://www.assoc-amazon.com/e/ir?t=mylibrary01-20&l=as2&o=1&a=0978739213" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+The database theory example for ACID compliance of a bank transaction is flawed as soon as User A and User B are with different banks. Instead of 'always consistent' we need to think about 'eventually consistent'.
+
+[![Release It!](https://images-na.ssl-images-amazon.com/images/I/41Nb-knuW-L._SL160_.jpg){: .left}](http://www.amazon.com/gp/product/0978739213?ie=UTF8&tag=tragicallyl33-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0978739213)
 
 I decided to hang around for Michael's next talk, 'The 90-Minute Startup'. He talked about Amazon EC2. I lost all my notes on this talk, but seeing the cloud in action was pretty cool.
 

@@ -3,6 +3,11 @@ wordpress_id: 117
 layout: post
 title: "No Fluff Just Stuff: Fall 2008 - Day 2 - Part 2"
 wordpress_url: http://tragicallyleet.com/?p=117
+categories:
+- metrics
+- performance
+- scalability
+- nfjs
 ---
 After lunch I bought a few books and then headed to the 'mystery panel' (a typo on the schedule) about Code Metrics with Neal Ford. After a brief tour of tools we started to talk about the meaning of various metrics. First, KLOC or thousands of lines of code is meaningless or worse.
 

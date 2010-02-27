@@ -3,8 +3,15 @@ wordpress_id: 340
 layout: post
 title: NFJS - Fall 2009 - Day Two
 wordpress_url: http://tragicallyleet.com/?p=340
+categories:
+- grails
+- groovy
+- nfjs
+- patterns
+- metaprogramming
+- java
 ---
-<h3>Dim Sum Grails - Scott Davis</h3>
+### Dim Sum Grails - Scott Davis
 
 Grails is an open-source web framework written in Groovy. Grails is being used by major players like Wired.com, Taco Bell in Canada, and more. 
 

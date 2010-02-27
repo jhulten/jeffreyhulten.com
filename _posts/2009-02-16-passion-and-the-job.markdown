@@ -3,6 +3,10 @@ wordpress_id: 196
 layout: post
 title: Passion and the Job
 wordpress_url: http://tragicallyleet.com/?p=196
+categories:
+- passion
+- programming
+- work
 ---
 I have had an interesting weekend. Bethany and I drove over the mountains to visit an old friend and mentor, John and his wife Sandy. We got in about 4pm on Saturday, sat and talked for a while, and went a lovely dinner. Today we went to breakfast about 9am, then went to a wine tasting at Kestrel Vinters. Bethany and I then helped John lay out the foundation for his new barn that arrives next week and dug 20 holes in the ground. Hard work and math (to get the building square) but oddly fun. We came back in the house, warmed up, watched some NASCAR (Sandy is the jock in their family), ate dinner, and watched a couple of okay movies (while tearing them apart for bad physics).
 

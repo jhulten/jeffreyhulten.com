@@ -3,6 +3,9 @@ wordpress_id: 387
 layout: post
 title: NaNoWriMo, meet MyProgWriMo
 wordpress_url: http://tragicallyleet.com/?p=387
+categories:
+- myprogwrimo
+- java
 ---
 My wife is, for the second year in a row, participating in NaNoWriMo, the National Novel Writing Month. In a effort to leech off her enthusiasm and not distract her by watching House reruns I will be doing MyProgWriMo, My Program Written in a Month.
 

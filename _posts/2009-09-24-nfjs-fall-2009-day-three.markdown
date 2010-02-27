@@ -3,6 +3,11 @@ wordpress_id: 353
 layout: post
 title: "NFJS \xE2\x80\x93 Fall 2009 \xE2\x80\x93 Day Three"
 wordpress_url: http://tragicallyleet.com/?p=353
+categories:
+- nfjs
+- productivity
+- clojure
+- neuroscience
 ---
 Ah, the final day of No Fluff...
 

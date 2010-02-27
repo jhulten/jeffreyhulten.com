@@ -3,6 +3,8 @@ wordpress_id: 247
 layout: post
 title: Stupid BASH tricks...
 wordpress_url: http://tragicallyleet.com/?p=247
+categories:
+- bash
 ---
 From my coworker, Hiram...
 
