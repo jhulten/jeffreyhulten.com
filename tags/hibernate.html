@@ -1,0 +1,42 @@
+---
+layout: tag
+tag: hibernate
+title: Posts in hibernate
+---
+        <li><a href="/2009/11/02/myprogwrimo-day-2-lessons-learned.html">MyProgWriMo - Day 2 - Lessons Learned</a>
+           &raquo; <abbr>02 Nov 2009</abbr>
+    <item> 
+  		<title>MyProgWriMo - Day 2 - Lessons Learned</title> 
+  		<link>http://tragicallyleet.com/2009/11/02/myprogwrimo-day-2-lessons-learned.html</link> 
+  		<comments>http://tragicallyleet.com/2009/11/02/myprogwrimo-day-2-lessons-learned.html#comments</comments> 
+  		<pubDate>Mon, 02 Nov 2009 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2009/11/02/myprogwrimo-day-2-lessons-learned.html</description> 
+  		<content:encoded><![CDATA[ This is going to be harder and easier than I thought.
+
+So Tapestry supplies its own IoC container, so no Spring at this point. Also there is a nice Hibernate integration, so I am starting to mess with my entities and figure out the needed annotations.
+
+Maven profiles seem to manage the different configuration aspects of my application such as properties for development versus a Hudson build.  So I can find it in the future, here is the profile snippet for development with a in memory database:
+
+{% highlight xml %}
+<profile>
+    <id>development</id>
+    <properties>
+        <hibernate.dialect>org.hibernate.dialect.HSQLDialect</hibernate.dialect>
+        <hibernate.connection.driver_class>org.hsqldb.jdbcDriver</hibernate.connection.driver_class>
+        <hibernate.connection.url>jdbc:hsqldb:mem:autoblog</hibernate.connection.url>
+        <hibernate.connection.username>sa</hibernate.connection.username>
+        <hibernate.connection.password></hibernate.connection.password>
+        <hibernate.connection.pool_size></hibernate.connection.pool_size>
+        <hibernate.connection.autocommit>true</hibernate.connection.autocommit>
+        <hibernate.cache.provider_class>org.hibernate.cache.HashtableCacheProvider
+        </hibernate.cache.provider_class>
+        <hibernate.hbm2ddl.auto>create-drop</hibernate.hbm2ddl.auto>
+        <hibernate.show_sql>true</hibernate.show_sql>
+    </properties>
+</profile>
+{% endhighlight %}
+
+ ]]></content:encoded> 
+  		</item>

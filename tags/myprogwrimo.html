@@ -1,0 +1,105 @@
+---
+layout: tag
+tag: myprogwrimo
+title: Posts in myprogwrimo
+---
+        <li><a href="/2009/11/01/nanowrimo-meet-myprogwrimo.html">NaNoWriMo, meet MyProgWriMo</a>
+           &raquo; <abbr>01 Nov 2009</abbr>
+        <li><a href="/2009/11/02/myprogwrimo-day-2-lessons-learned.html">MyProgWriMo - Day 2 - Lessons Learned</a>
+           &raquo; <abbr>02 Nov 2009</abbr>
+        <li><a href="/2009/11/02/myprogwrimo-iteration-zero-complete.html">MyProgWriMo - Iteration Zero Complete</a>
+           &raquo; <abbr>02 Nov 2009</abbr>
+        <li><a href="/2009/11/16/myprogwrimo-day-15-reset.html">MyProgWriMo - Day 15 - Reset</a>
+           &raquo; <abbr>16 Nov 2009</abbr>
+    <item> 
+  		<title>NaNoWriMo, meet MyProgWriMo</title> 
+  		<link>http://tragicallyleet.com/2009/11/01/nanowrimo-meet-myprogwrimo.html</link> 
+  		<comments>http://tragicallyleet.com/2009/11/01/nanowrimo-meet-myprogwrimo.html#comments</comments> 
+  		<pubDate>Sun, 01 Nov 2009 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2009/11/01/nanowrimo-meet-myprogwrimo.html</description> 
+  		<content:encoded><![CDATA[ My wife is, for the second year in a row, participating in NaNoWriMo, the National Novel Writing Month. In a effort to leech off her enthusiasm and not distract her by watching House reruns I will be doing MyProgWriMo, My Program Written in a Month.
+
+The plan is to write stories that capture the work to be done in a month, hold one week sprints to execute stories, and release a functional (if not pretty) program at the end of November.
+
+This is the first time I have tried a time-boxed activity like this, so we will see what happens. I will attempt to blog about the experience, but will focus on completing the stories first.
+
+I decided to focus on Java development for this project. I have not done any serious Java programming in YEARS, so I needed a problem set that I understood well so I could focus on the HOW instead of on the WHAT.
+
+SO, here it is. In one month I plan to write (with tests) a blogging platform. I know! Its so cliche... But I understand the issues and there is lots to learn.
+
+Now, no one just writes Java code anymore (or so it seems) so I will be using some tools along the way. Hibernate (duh) will be used for persistence. Spring (double duh) will be used for IoC. I am thinking about Tapestry for presentation, but I have not gotten that far.
+
+Stay tuned, boys and girls. It should be a wild ride.
+
+Oh, and why didn't I choose Grails? I am pretty sure I can do this all in Grails. I want to know I can do it in Java as well.
+ ]]></content:encoded> 
+  		</item>
+    <item> 
+  		<title>MyProgWriMo - Day 2 - Lessons Learned</title> 
+  		<link>http://tragicallyleet.com/2009/11/02/myprogwrimo-day-2-lessons-learned.html</link> 
+  		<comments>http://tragicallyleet.com/2009/11/02/myprogwrimo-day-2-lessons-learned.html#comments</comments> 
+  		<pubDate>Mon, 02 Nov 2009 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2009/11/02/myprogwrimo-day-2-lessons-learned.html</description> 
+  		<content:encoded><![CDATA[ This is going to be harder and easier than I thought.
+
+So Tapestry supplies its own IoC container, so no Spring at this point. Also there is a nice Hibernate integration, so I am starting to mess with my entities and figure out the needed annotations.
+
+Maven profiles seem to manage the different configuration aspects of my application such as properties for development versus a Hudson build.  So I can find it in the future, here is the profile snippet for development with a in memory database:
+
+{% highlight xml %}
+<profile>
+    <id>development</id>
+    <properties>
+        <hibernate.dialect>org.hibernate.dialect.HSQLDialect</hibernate.dialect>
+        <hibernate.connection.driver_class>org.hsqldb.jdbcDriver</hibernate.connection.driver_class>
+        <hibernate.connection.url>jdbc:hsqldb:mem:autoblog</hibernate.connection.url>
+        <hibernate.connection.username>sa</hibernate.connection.username>
+        <hibernate.connection.password></hibernate.connection.password>
+        <hibernate.connection.pool_size></hibernate.connection.pool_size>
+        <hibernate.connection.autocommit>true</hibernate.connection.autocommit>
+        <hibernate.cache.provider_class>org.hibernate.cache.HashtableCacheProvider
+        </hibernate.cache.provider_class>
+        <hibernate.hbm2ddl.auto>create-drop</hibernate.hbm2ddl.auto>
+        <hibernate.show_sql>true</hibernate.show_sql>
+    </properties>
+</profile>
+{% endhighlight %}
+
+ ]]></content:encoded> 
+  		</item>
+    <item> 
+  		<title>MyProgWriMo - Iteration Zero Complete</title> 
+  		<link>http://tragicallyleet.com/2009/11/02/myprogwrimo-iteration-zero-complete.html</link> 
+  		<comments>http://tragicallyleet.com/2009/11/02/myprogwrimo-iteration-zero-complete.html#comments</comments> 
+  		<pubDate>Mon, 02 Nov 2009 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2009/11/02/myprogwrimo-iteration-zero-complete.html</description> 
+  		<content:encoded><![CDATA[ Many agile folks will talk about Iteration Zero: the stuff you have to do before you can do stuff. Mine is complete.
+
+Yesterday (11/1) I:
+
+- Created a basic project structure using a maven archetype
+- Checked that structure into [source control](http://github.com/jhulten/autoblog)
+- Setup a Hudson job to run [continuous integration](http://hudson.automatedlabs.com/hudson/job/autoblog/)
+
+Today I have a light load (since it falls to me to feed the wife). I want to get my first page to render in Tapestry and continue research into the elements I will need like custom dispatching.
+ ]]></content:encoded> 
+  		</item>
+    <item> 
+  		<title>MyProgWriMo - Day 15 - Reset</title> 
+  		<link>http://tragicallyleet.com/2009/11/16/myprogwrimo-day-15-reset.html</link> 
+  		<comments>http://tragicallyleet.com/2009/11/16/myprogwrimo-day-15-reset.html#comments</comments> 
+  		<pubDate>Mon, 16 Nov 2009 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2009/11/16/myprogwrimo-day-15-reset.html</description> 
+  		<content:encoded><![CDATA[ So I have been working on my project, but Tapestry has been kicking my butt. I have decided to step back and reset. I have useable DAOs and crappy DTOs and not much else.
+
+So I am resetting. Grabbing the code that works, dropping Tapestry (the documentation on the IoC container and testing is not great) and going back to basics. Hibernate, Spring, Sitemesh...
+ ]]></content:encoded> 
+  		</item>

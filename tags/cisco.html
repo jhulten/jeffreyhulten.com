@@ -7,3 +7,148 @@ title: Posts in cisco
            &raquo; <abbr>10 May 2007</abbr>
         <li><a href="/2007/05/15/adventures-with-the-cisco-871w-part-2.html">Adventures with the Cisco 871W (Part 2)</a>
            &raquo; <abbr>15 May 2007</abbr>
+    <item> 
+  		<title>Adventures with the Cisco 871W (Part 1)</title> 
+  		<link>http://tragicallyleet.com/2007/05/10/adventures-with-the-cisco-871w-part-1.html</link> 
+  		<comments>http://tragicallyleet.com/2007/05/10/adventures-with-the-cisco-871w-part-1.html#comments</comments> 
+  		<pubDate>Thu, 10 May 2007 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2007/05/10/adventures-with-the-cisco-871w-part-1.html</description> 
+  		<content:encoded><![CDATA[ I just bought a Cisco 871W Integrated Services Router for home.  This is an attempt to add to my mad skillz by adding IOS and having a little fun learning in the process.
+
+The box arrived today.  Inside were the router, a power supply, serial and ethernet cable, manuals, and antenna for the back of the unit.
+
+I plugged the 871 into the wall and used the serial cable to attach it to my laptop.  Boot up hyperterminal and set the serial settings to 9600 baud, 8 bit, no parity, 1 stop bit and no flow control.  The router shows a splash screen telling you to log in with the username *cisco* and the password *cisco*.  Since factory passwords are bad, that is the first thing I wanted to change.
+
+I logged in with the credentials provided and then floundered about for a bit trying to remember my ancient IOS skills.
+
+First I needed to get the machine into configuration mode.  Since the account (cisco) that I logged in with was already at privilege level 15 I did not need to enable privileged EXEC mode.
+
+    yourname# configure terminal
+    yourname(config)#
+
+There we go!  Now I was in configuration mode.  Now I needed to add my new administrative user and password to the config.
+
+    yourname(config)# username admuser privilege 15 secret 0 secretpasswd
+    yourname(config)#
+
+Now I could log out of the cisco account and into the admuser account.
+
+    yourname(config)# exit
+    yourname# exit
+    Press RETURN to get started.
+    User Access Verification
+    Username: admuser
+    Password:
+    yourname#
+
+We have access as the admuser account, however the cisco account still exists.   Need to fix that...
+
+    yourname# configure terminal
+    yourname(config)# no username cisco
+    yourname(config)#
+
+Much better.  Now, as you may know, when you have made a change to a Cisco IOS config, you are editing the running configuration.  This means that we need to save the running configuration.  Prompt more floundering on my part until I realize that you cannot save the configuration in config mode.
+
+    yourname(config)# exit
+    yourname# copy running-config startup-config
+    Destination filename [startup-config]? ENTER
+    Building configuration...
+    [OK]
+    yourname#
+
+Woohoo!  Got my first configuration change saved in the startup configuration.  Now for some more floundering before my next post.
+ ]]></content:encoded> 
+  		</item>
+    <item> 
+  		<title>Adventures with the Cisco 871W (Part 2)</title> 
+  		<link>http://tragicallyleet.com/2007/05/15/adventures-with-the-cisco-871w-part-2.html</link> 
+  		<comments>http://tragicallyleet.com/2007/05/15/adventures-with-the-cisco-871w-part-2.html#comments</comments> 
+  		<pubDate>Tue, 15 May 2007 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2007/05/15/adventures-with-the-cisco-871w-part-2.html</description> 
+  		<content:encoded><![CDATA[ In the [previous post](/2007/05/10/adventures-with-the-cisco-871w-part-1.html), I got my new Cisco 871W Integrated Services Router attached via serial cable to my laptop and changed the factory default username and password.  Next step, set the router hostname and get the new box talking on my internal network.
+
+First step is to make sure I can recover if something goes wrong.  I found instructions on backing up my config through HyperTerminal or TFTP on [Cisco's site](http://www.cisco.com/en/US/products/sw/iosswrel/ps1835/products_tech_note09186a008020260d.shtml).
+
+Next we set the hostname and domain.
+
+    yourname# configure terminal
+    yourname(config)# hostname fw
+    fw(config)#
+
+Notice the hostname change took effect immediately.
+
+    fw(config)# ip domain name domain.com
+    fw(config)# exit
+    fw# copy running-config startup-config
+
+Now the new hostname and domain name are saved to the startup configuration.  Next up, setting the network information.
+
+    fw#show ip interface
+    FastEthernet0 is up, line protocol is down
+      Internet protocol processing disabled
+    FastEthernet1 is up, line protocol is down
+      Internet protocol processing disabled
+    FastEthernet2 is up, line protocol is down
+      Internet protocol processing disabled
+    FastEthernet3 is down, line protocol is down
+      Internet protocol processing disabled
+    FastEthernet4 is administratively down, line protocol is down
+      Internet protocol processing disabled
+    Dot11Radio0 is administratively down, line protocol is down
+      Internet protocol processing disabled
+    Vlan1 is up, line protocol is down
+      Internet address is 10.10.10.1/29
+      Broadcast address is 255.255.255.255
+      -- Cut --
+    Virtual-Dot11Radio0 is administratively down, line protocol is down
+      Internet protocol processing disabled
+    fw#
+
+Lets take a look at the VLANs.
+
+    fw#show vlans 
+
+    No Virtual LANs configured.
+
+    fw#
+
+Wait a second!  "No Virtual LANs configured"?   The interfaces show Vlan1 is up?
+
+    fw#show vlan-switch
+    VLAN Name                             Status    Ports
+    ---- -------------------------------- --------- -------------------------------
+    1    default                          active    Fa0, Fa1, Fa2, Fa3
+    1002 fddi-default                     active
+    1003 token-ring-default               active
+    1004 fddinet-default                  active
+    1005 trnet-default                    active    
+
+    VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+    ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+    1    enet  100001     1500  -      -      -        -    -        1002   1003
+    1002 fddi  101002     1500  -      -      -        -    -        1      1003
+    1003 tr    101003     1500  1005   0      -        -    srb      1      1002
+    1004 fdnet 101004     1500  -      -      1        ibm  -        0      0
+    1005 trnet 101005     1500  -      -      1        ibm  -        0      0   
+
+    fw#
+
+Aha!  Vlan1 is the default Virtual LAN and all ports are assigned to it.  Since I do not have the Advanced IP Services Cisco IOS Software Image I cannot add more Virtual LANs.  With Advanced IP Services I can have up to four VLANs on the 871W.  Looks like I need to configure the default VLAN.
+
+    fw#configure terminal
+    Enter configuration commands, one per line.  End with CNTL/Z.
+    fw(config)#interface Vlan1
+    fw(config-if)#ip address 192.168.138.1 255.255.255.0
+    fw(config-if)#no ip route-cache
+    fw(config-if)#exit
+    fw(config)#exit
+    fw# copy running-config startup-config
+    fw#
+
+Now all the internal interfaces on my router are configured to the 192.168.69.0/24 network.  Next up, setting up the DHCP server!
+ ]]></content:encoded> 
+  		</item>

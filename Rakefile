@@ -78,7 +78,7 @@ task :tagcloud do
   HTML
   site.categories.sort.each do |category, posts|
     s = posts.count
-    font_size = 12 + (s*1.5);
+    font_size = 10 + (s*1.5);
     html << "<a href=\"/tags/#{category}.html\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> \n"
   end
   html << "</div>\n"
@@ -105,6 +105,11 @@ task :publish do
   puts "Doesn't do anything yet..."
 end
 
+desc 'upload site to host' 
+task :upload do
+  puts "Doesn't do anything yet..."
+end
+
 task :require_input do
   begin
     require 'highline/import'
@@ -114,7 +119,7 @@ task :require_input do
   end
 end
 
-task :build => [:tags]
+task :build => [:tags, :tagcloud]
 
 task :default => [:serve]
 

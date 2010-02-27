@@ -5,3 +5,40 @@ title: Posts in rails
 ---
         <li><a href="/2006/06/07/using-subdomains-as-account-keys.html">Using Subdomains as Account Keys</a>
            &raquo; <abbr>07 Jun 2006</abbr>
+    <item> 
+  		<title>Using Subdomains as Account Keys</title> 
+  		<link>http://tragicallyleet.com/2006/06/07/using-subdomains-as-account-keys.html</link> 
+  		<comments>http://tragicallyleet.com/2006/06/07/using-subdomains-as-account-keys.html#comments</comments> 
+  		<pubDate>Wed, 07 Jun 2006 00:00:00 -0800</pubDate> 
+  		<dc:creator>Jeffrey Hulten</dc:creator> 
+  		<guid isPermaLink="true">http://tragicallyleet.com</guid> 
+  		<description>/2006/06/07/using-subdomains-as-account-keys.html</description> 
+  		<content:encoded><![CDATA[ I looked all over for an explanation on how to use the domain or subdomain as the account key (a la campfirenow.com) and now I have it...<!--more-->
+
+All it takes is putting the following in the application controller.
+
+{% highlight ruby %}
+class ApplicationController &lt; ActionController::Base
+  attr_writer :account   
+  attr_reader :account     
+  before_filter {|c| 
+    c.account = Account.find_by_subdomain(
+      c.request.subdomains.first
+    )  
+  }
+end 
+{% endhighlight %}
+
+Then you can use it in any controller as follows:
+
+{% highlight ruby %}
+class BlogController &lt; ApplicationController   
+  def index     
+    render_text account.subdomain   
+  end 
+end 
+{% endhighlight %}
+
+Check it out [here](http://wiki.rubyonrails.com/rails/pages/HowToUseSubdomainsAsAccountKeys)...
+ ]]></content:encoded> 
+  		</item>
