@@ -77,16 +77,17 @@ task :tagcloud do
 layout: default
 title: Tag cloud
 ---
-<h2>Tag cloud</h2>
-
+<h3>Tag cloud</h3>
+<div class="tagcloud" style="text-align: center">
   HTML
   site.categories.sort.each do |category, posts|
     s = posts.count
     font_size = 12 + (s*1.5);
     html << "<a href=\"/tags/#{category}.html\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> \n"
   end
+  html << "</div>\n"
 
-  File.open('tags/index.html', 'w+') do |file|
+  File.open('_includes/tagcloud.html', 'w+') do |file|
     file.puts html
   end
   puts 'Done.'
