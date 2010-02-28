@@ -1,0 +1,13 @@
+---
+layout: tag_rss
+tag: bugzilla
+---
+        <item> 
+        <title>Bugzilla 3.0 Released!</title> 
+        <link>http://tragicallyleet.com/2007/05/12/bugzilla-30-released.html</link> 
+        <comments>http://tragicallyleet.com/2007/05/12/bugzilla-30-released.html#comments</comments> 
+        <pubDate>Sat, 12 May 2007 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2007/05/12/bugzilla-30-released.html</description> 
+        </item>

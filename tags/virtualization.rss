@@ -1,0 +1,13 @@
+---
+layout: tag_rss
+tag: virtualization
+---
+        <item> 
+        <title>Linode: Great Virtualized Linux Moves to Xen</title> 
+        <link>http://tragicallyleet.com/2008/03/28/linode-great-virtualized-linux-moves-to-xen.html</link> 
+        <comments>http://tragicallyleet.com/2008/03/28/linode-great-virtualized-linux-moves-to-xen.html#comments</comments> 
+        <pubDate>Fri, 28 Mar 2008 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2008/03/28/linode-great-virtualized-linux-moves-to-xen.html</description> 
+        </item>

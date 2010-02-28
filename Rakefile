@@ -27,35 +27,33 @@ task :tags do
   site.categories.sort.each do |category, posts|
     puts " - #{category}"
     html = "---\nlayout: tag\ntag: #{category}\ntitle: Posts in #{category}\n---\n"
+    rss = "---\nlayout: tag_rss\ntag: #{category}\n---\n"
     posts.each do |post|
       post_data = post.to_liquid
       html << <<-HTML
         <li><a href="#{post_data['url']}">#{post_data['title']}</a>
            &raquo; <abbr>#{post_data['date'].strftime("%d %b %Y") }</abbr>
       HTML
+
+      rss << <<-RSS
+        <item> 
+        <title>#{post_data['title']}</title> 
+        <link>http://tragicallyleet.com#{post_data['url']}</link> 
+        <comments>http://tragicallyleet.com#{post_data['url']}#comments</comments> 
+        <pubDate>#{post_data['date'].strftime("%a, %d %b %Y %H:%M:%S -0800") }</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com#{post_data['permalink']}</guid> 
+        <description>#{post_data['url'] }</description> 
+        </item>
+      RSS
+
     end
     File.open("tags/#{category}.html", 'w+') do |file|
       file.puts html
     end
-
-    posts.each do |post|
-      post_data = post.to_liquid
-      html << <<-RSS
-    <item> 
-  		<title>#{post_data['title']}</title> 
-  		<link>http://tragicallyleet.com#{post_data['url']}</link> 
-  		<comments>http://tragicallyleet.com#{post_data['url']}#comments</comments> 
-  		<pubDate>#{post_data['date'].strftime("%a, %d %b %Y %H:%M:%S -0800") }</pubDate> 
-  		<dc:creator>Jeffrey Hulten</dc:creator> 
-  		<guid isPermaLink="true">http://tragicallyleet.com#{post_data['permalink']}</guid> 
-  		<description>#{post_data['url'] }</description> 
-  		<content:encoded><![CDATA[ #{post_data['content']} ]]></content:encoded> 
-  		</item>
-        RSS
-      end
-      File.open("tags/#{category}.html", 'w+') do |file|
-        file.puts html
-      end
+    File.open("tags/#{category}.rss", 'w+') do |file|
+      file.puts rss
+    end
     
   end
   puts 'Done.'
@@ -71,7 +69,7 @@ task :tagcloud do
   options = Jekyll.configuration({})
   site = Jekyll::Site.new(options)
   site.read_posts('')
-
+  
   html =<<-HTML
   <h3>Tag cloud</h3>
   <div style="text-align: center">
