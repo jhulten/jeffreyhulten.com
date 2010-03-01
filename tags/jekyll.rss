@@ -1,0 +1,13 @@
+---
+layout: tag_rss
+tag: jekyll
+---
+        <item> 
+        <title>Moving my Blog to Jekyll</title> 
+        <link>http://tragicallyleet.com/2010/02/28/moving-my-blog-to-jekyll.html</link> 
+        <comments>http://tragicallyleet.com/2010/02/28/moving-my-blog-to-jekyll.html#comments</comments> 
+        <pubDate>Sun, 28 Feb 2010 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2010/02/28/moving-my-blog-to-jekyll.html</description> 
+        </item>
