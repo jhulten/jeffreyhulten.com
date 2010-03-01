@@ -105,7 +105,7 @@ end
 
 desc 'upload site to host' 
 task :upload => [:site] do
-  sh 'rsync -avz -e ssh _site/* autolabs@web102.webfaction.com:/home/autolabs/webapps/tragic_staticblog'
+  sh 'rsync -crpvz -e ssh _site/* autolabs@web102.webfaction.com:/home/autolabs/webapps/tragic_staticblog'
 end
 
 task :require_input do
