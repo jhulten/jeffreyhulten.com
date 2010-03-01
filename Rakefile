@@ -77,7 +77,7 @@ task :tagcloud do
   site.categories.sort.each do |category, posts|
     s = posts.count
     font_size = 10 + (s*1.5);
-    html << "<a href=\"/tags/#{category}.html\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> \n"
+    html << "<a href=\"/tags/#{category}\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> \n"
   end
   html << "</div>\n"
 
