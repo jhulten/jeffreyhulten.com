@@ -21,18 +21,26 @@ I got in a little late today after grabbing coffee and headed to [Michael Nygard
 
 ### Amdahl's Law
 
-$$ T_p = \sigma T_1 + ( 1 - \sigma ) \frac{T_1}{p} $$ 
+$$ T_p = \sigma T_1 + ( 1 - \sigma ) \frac{T_1}{p} $$
 
 #### Speedup Ratio
 
-[pmath]S_p=T_1/1+sigma(p-1) [/pmath] 
+$$ S_p = \frac{ T_1 }{ 1 + \sigma(p-1) } $$ 
 
 ### Universal Scalability Law
 
 [pmath]C_p=p/1+sigma(p-1)+kappa p(p-1)[/pmath]
 where
-[pmath]sigma[/pmath] = contention
-[pmath]kappa[/pmath] = coherency
+
+\[
+\sigma
+\text{= contention}
+\]
+
+\[
+\kappa
+\text{= coherency}
+\]
 
 Michael mentioned a book, [Guerrilla Capacity Planning](http://www.amazon.com/gp/product/3540261389?ie=UTF8&tag=mylibrary01-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540261389) by Neil Gunther. It covers a lot of the mathematics of scalability and capacity planning.
 
@@ -79,7 +87,7 @@ After the panel I attended Ken Sipe's session on Java Memory, Performance, and G
 
 Some useful equations from the JVM memory management talk.
 
-[pmath]E=S_n-(S_n/(R_s+2))*2[/pmath]
+[pmath]E=S_n-(S_n/(R_s+2))\*2[/pmath]
 
 [pmath]S_s=(S_n-E)/2[/pmath]
 

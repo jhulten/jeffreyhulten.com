@@ -2,8 +2,7 @@ lsi: true
 pygments: true
 permalink: /:year/:month/:day/:title
 maruku:
-  png_dir: images/latex
-  png_url: /images/latex
+  use_tex: true
 exclude:
 - README
 - Rakefile

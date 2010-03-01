@@ -104,8 +104,11 @@ task :publish do
 end
 
 desc 'upload site to host' 
-task :upload => [:site] do
+task :upload => [:site, :rsync]
+
+task :rsync do
   sh 'rsync -crpvz -e ssh _site/* autolabs@web102.webfaction.com:/home/autolabs/webapps/tragic_staticblog'
+  sh 'scp _site/.htaccess autolabs@web102.webfaction.com:/home/autolabs/webapps/tragic_staticblog'
 end
 
 task :require_input do

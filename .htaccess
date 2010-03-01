@@ -2,6 +2,11 @@ ErrorDocument 404 /404.html
 
 RewriteEngine on
 
+# tag/cisco/ to tags/cisco.html
+RewriteRule     /tag/(.*)$      http://tragicallyleet.com/tags/$1.html [R=301,L]
+
+RewriteRule     /feed/          http://tragicallyleet.com/rss.xml [R=301,L]
+
 # Remove the www
 RewriteCond     %{HTTP_HOST}    ^www\.(.+)$ [NC]
 RewriteRule     ^(.*)$          http://%1/$1 [R=301,L]
@@ -10,7 +15,3 @@ RewriteRule     ^(.*)$          http://%1/$1 [R=301,L]
 RewriteCond     %{HTTP_HOST}    ^tragicallyl33t.com$ [NC]
 RewriteRule     ^(.*)$          http://tragicallyleet.com/$1 [R=301,L]
 
-# tag/cisco/ to tags/cisco.html
-RewriteRule     /tag/(.*)       /tags/$1.html [R=301,L]
-
-RewriteRule     /feed/          /rss.xml [R=301,L]
