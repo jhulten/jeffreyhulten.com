@@ -29,7 +29,7 @@ $$ S_p = \frac{ T_1 }{ 1 + \sigma(p-1) } $$
 
 ### Universal Scalability Law
 
-[pmath]C_p=p/1+sigma(p-1)+kappa p(p-1)[/pmath]
+$$ C_p = \frac{ p }{ 1+\sigma p + \kappa p(p-1)} $$
 where
 
 \[
@@ -44,7 +44,9 @@ where
 
 Michael mentioned a book, [Guerrilla Capacity Planning](http://www.amazon.com/gp/product/3540261389?ie=UTF8&tag=mylibrary01-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540261389) by Neil Gunther. It covers a lot of the mathematics of scalability and capacity planning.
 
-There are only two ways to increase scalability: decrease contention or decrease conherency. Why is "improve performance" not on the list? Increasing performance increases capacity. Scalability is the measure of how added resources impact added capacity. Increasing performance can reduce your need for scalability, but does not benefit scalability. An interesting side note was that increasing performance generally means making the serial portion ([pmath]sigma[/pmath]) a larger portion of the total time. This means that as you spend more time on performance, you actually create a situation where you will reach maximum capacity with fewer processing resources.
+There are only two ways to increase scalability: decrease contention or decrease coherency. Why is "improve performance" not on the list? Increasing performance increases capacity. Scalability is the measure of how added resources impact added capacity. Increasing performance can reduce your need for scalability, but does not benefit scalability. An interesting side note was that increasing performance generally means making the serial portion (
+$$ \sigma $$
+) a larger portion of the total time. This means that as you spend more time on performance, you actually create a situation where you will reach maximum capacity with fewer processing resources.
 
 ### Brewer's Conjecture
 
@@ -73,7 +75,9 @@ An important note: when you use and rely on ACID compliance of a relational data
 
 > "If you can't split it, you can't scale it." -- Randy Shoup, eBay
 
-All partitioning strategies assume no cross-cluster dependencies on shared data. Shared writable data requires serialized access which raised [pmath]sigma[/pmath].
+All partitioning strategies assume no cross-cluster dependencies on shared data. Shared writable data requires serialized access which raised
+$$ \sigma $$
+.
 
 The database theory example for ACID compliance of a bank transaction is flawed as soon as User A and User B are with different banks. Instead of 'always consistent' we need to think about 'eventually consistent'.
 
@@ -87,15 +91,15 @@ After the panel I attended Ken Sipe's session on Java Memory, Performance, and G
 
 Some useful equations from the JVM memory management talk.
 
-[pmath]E=S_n-(S_n/(R_s+2))\*2[/pmath]
-
-[pmath]S_s=(S_n-E)/2[/pmath]
+$$ E = S_n - ( S_n / (R_s+2) ) * 2 $$
+$$ S_s=(S_n-E)/2 $$
 
 where
-[pmath]E[/pmath] = Size of Eden
-[pmath]S_n[/pmath] = Size of New Space
-[pmath]R_s[/pmath] = Survivor Ratio
-[pmath]S_s[/pmath] = Size of Survivor Space
+
+$$ E = Size of Eden $$
+$$ S_n  = Size of New Space $$
+$$ R_s  = Survivor Ratio $$
+$$ S_s  = Size of Survivor Space $$
 
 jps allows you to see processes either locally or remotely.
 
