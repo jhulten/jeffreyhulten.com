@@ -51,9 +51,9 @@ task :tags do
     File.open("tags/#{category}.html", 'w+') do |file|
       file.puts html
     end
-    File.open("tags/#{category}.rss", 'w+') do |file|
-      file.puts rss
-    end
+    # File.open("tags/#{category}.rss", 'w+') do |file|
+    #   file.puts rss
+    # end
     
   end
   puts 'Done.'
@@ -104,8 +104,8 @@ task :publish do
 end
 
 desc 'upload site to host' 
-task :upload do
-  puts "Doesn't do anything yet..."
+task :upload => [:site] do
+  sh 'rsync -avz -e ssh _site/* autolabs@web102.webfaction.com:/home/autolabs/webapps/tragic_staticblog'
 end
 
 task :require_input do
