@@ -28,7 +28,7 @@ In the end, software and application design is about code; all other artifacts a
 
 Some references include Neal's [The Productive Programmer](http://www.amazon.com/gp/product/0596519788?ie=UTF8&tag=tragicallyl33-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596519788) and [The Productive Programmer](http://www.amazon.com/gp/product/0596519788?ie=UTF8&tag=tragicallyl33-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596519788).
 
-<!-- NOTE - XRAY FOR ECLIPSE -->After a short break we reassembled for another Neal Ford presentation, '[Real World Refactoring](http://nealford.com/downloads/conferences/canonical/Neal_Ford-Real_World_Refactoring-slides.pdf)'. Since all the major tools provide refactoring facilities Neal focused on when and why to refactor.
+After a short break we reassembled for another Neal Ford presentation, '[Real World Refactoring](http://nealford.com/downloads/conferences/canonical/Neal_Ford-Real_World_Refactoring-slides.pdf)'. Since all the major tools provide refactoring facilities Neal focused on when and why to refactor.
 
 First he talked about the building blocks of refactoring. ‘Composed method’ was the first, specifically divide your code into many small methods that each complete one and only one task. If you have a method longer than ten lines you have a candidate for method composition.
 

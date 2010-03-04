@@ -15,7 +15,7 @@ categories:
 ---
 NOTE: I delayed posting these entries to clean up my notes and add some useful links.
 
-<i>GRUMPY NOTE: I lost a bunch of notes so this is based on my faulty memory and some slides.</i>
+*GRUMPY NOTE: I lost a bunch of notes so this is based on my faulty memory and some slides.*
 
 I got in a little late today after grabbing coffee and headed to [Michael Nygard's](http://michaelnygard.com/) presentation "Architect for Scale". I love the smell of capacity math in the morning.
 
@@ -30,23 +30,14 @@ $$ S_p = \frac{ T_1 }{ 1 + \sigma(p-1) } $$
 ### Universal Scalability Law
 
 $$ C_p = \frac{ p }{ 1+\sigma p + \kappa p(p-1)} $$
-where
 
-\[
-\sigma
-\text{= contention}
-\]
-
-\[
-\kappa
-\text{= coherency}
-\]
+where:
+&sigma; = contention
+&kappa; = coherency
 
 Michael mentioned a book, [Guerrilla Capacity Planning](http://www.amazon.com/gp/product/3540261389?ie=UTF8&tag=mylibrary01-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=3540261389) by Neil Gunther. It covers a lot of the mathematics of scalability and capacity planning.
 
-There are only two ways to increase scalability: decrease contention or decrease coherency. Why is "improve performance" not on the list? Increasing performance increases capacity. Scalability is the measure of how added resources impact added capacity. Increasing performance can reduce your need for scalability, but does not benefit scalability. An interesting side note was that increasing performance generally means making the serial portion (
-$$ \sigma $$
-) a larger portion of the total time. This means that as you spend more time on performance, you actually create a situation where you will reach maximum capacity with fewer processing resources.
+There are only two ways to increase scalability: decrease contention or decrease coherency. Why is "improve performance" not on the list? Increasing performance increases capacity. Scalability is the measure of how added resources impact added capacity. Increasing performance can reduce your need for scalability, but does not benefit scalability. An interesting side note was that increasing performance generally means making the serial portion ( &sigma; ) a larger portion of the total time. This means that as you spend more time on performance, you actually create a situation where you will reach maximum capacity with fewer processing resources.
 
 ### Brewer's Conjecture
 
@@ -85,9 +76,9 @@ The database theory example for ACID compliance of a bank transaction is flawed 
 
 I decided to hang around for Michael's next talk, 'The 90-Minute Startup'. He talked about Amazon EC2. I lost all my notes on this talk, but seeing the cloud in action was pretty cool.
 
-After lunch we had the expert panel discussion where Ken Sipe, Ted Neward, Matthew McCullough, Brian Sam-Bodden, and Michael Nygard talked about issues like the potential future of software development regulation, the potential impact of the IBM-Sun aquisition, and parallels between software engineering and the medical, legal, and construction.
+After lunch we had the expert panel discussion where Ken Sipe, Ted Neward, Matthew McCullough, Brian Sam-Bodden, and Michael Nygard talked about issues like the potential future of software development regulation, the potential impact of the IBM-Sun acquisition, and parallels between software engineering and the medical, legal, and construction.
 
-After the panel I attended Ken Sipe's session on Java Memory, Performance, and Garbage Collection. I learned a bunch about the theory of garbage collection on the JVM. I picked up a few nice tips. To speed up your JVM startup time set your PermSpace and MaxPermSpace to the values based on what you see while your application is running. This way the JVM is not allocating space, finding is insufficent, reallocating over and over as you start up.
+After the panel I attended Ken Sipe's session on Java Memory, Performance, and Garbage Collection. I learned a bunch about the theory of garbage collection on the JVM. I picked up a few nice tips. To speed up your JVM startup time set your PermSpace and MaxPermSpace to the values based on what you see while your application is running. This way the JVM is not allocating space, finding is insufficient, reallocating over and over as you start up.
 
 Some useful equations from the JVM memory management talk.
 
