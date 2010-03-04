@@ -1,0 +1,13 @@
+---
+layout: tag_rss
+tag: engineering
+---
+        <item> 
+        <title>An Implementation is Not a Pattern</title> 
+        <link>http://tragicallyleet.com/2006/10/23/an-implementation-is-not-a-pattern</link> 
+        <comments>http://tragicallyleet.com/2006/10/23/an-implementation-is-not-a-pattern#comments</comments> 
+        <pubDate>Mon, 23 Oct 2006 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2006/10/23/an-implementation-is-not-a-pattern</description> 
+        </item>

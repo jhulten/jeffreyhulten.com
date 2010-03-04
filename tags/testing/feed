@@ -1,0 +1,22 @@
+---
+layout: tag_rss
+tag: testing
+---
+        <item> 
+        <title>Testing Puppet Parser Functions</title> 
+        <link>http://tragicallyleet.com/2009/09/08/testing-puppet-parser-functions</link> 
+        <comments>http://tragicallyleet.com/2009/09/08/testing-puppet-parser-functions#comments</comments> 
+        <pubDate>Tue, 08 Sep 2009 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2009/09/08/testing-puppet-parser-functions</description> 
+        </item>
+        <item> 
+        <title>NFJS - Fall 2009 - Day One</title> 
+        <link>http://tragicallyleet.com/2009/09/22/nfjs-fall-2009-day-one</link> 
+        <comments>http://tragicallyleet.com/2009/09/22/nfjs-fall-2009-day-one#comments</comments> 
+        <pubDate>Tue, 22 Sep 2009 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2009/09/22/nfjs-fall-2009-day-one</description> 
+        </item>
