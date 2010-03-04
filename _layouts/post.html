@@ -2,11 +2,17 @@
 layout: default
 ---
 
-<div id="post">
+<div id="post" class="span-15 last">
 <h2>{{ page.title }}</h2>
+<div class="span-15 last" style="font-weight: bold; ">Posted on {{ post.date | date_to_string }} in
+  {% for category in post.categories %}
+    <a href="/tags/{{ category }}">{{ category }}</a> 
+  {% endfor %}
+</div>
+
 {{ content }}
 </div>
- 
+
 <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
