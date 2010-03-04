@@ -48,12 +48,13 @@ task :tags do
       RSS
 
     end
-    File.open("tags/#{category}.html", 'w+') do |file|
+    sh "mkdir -p tags/#{category}"
+    File.open("tags/#{category}/index.html", 'w+') do |file|
       file.puts html
     end
-    # File.open("tags/#{category}.rss", 'w+') do |file|
-    #   file.puts rss
-    # end
+    File.open("tags/#{category}/feed", 'w+') do |file|
+      file.puts rss
+    end
     
   end
   puts 'Done.'
