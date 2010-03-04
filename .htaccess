@@ -5,6 +5,7 @@ RewriteEngine on
 # tag/cisco/ to tags/cisco.html
 RewriteRule     ^tag/(.*)$      http://tragicallyleet.com/tags/$1.html [R=301,L]
 
+RewriteRule     ^feed/atom      http://tragicallyleet.com/atom.xml [R=301,L]
 RewriteRule     ^feed           http://tragicallyleet.com/rss.xml [R=301,L]
 
 # Remove the www
