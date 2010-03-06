@@ -2,6 +2,11 @@ ErrorDocument 404 /404.html
 
 RewriteEngine on
 
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^[a-zA-Z0-9]{4}$ supr.php?supr=$0
+#RewriteRule ^supr_settings.json$ supr.php?check_install=$0
+
 # tag/cisco/ to tags/cisco.html
 RewriteRule     ^tag/(.*)$      http://tragicallyleet.com/tags/$1.html [R=301,L]
 
