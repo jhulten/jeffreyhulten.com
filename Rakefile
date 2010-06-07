@@ -1,8 +1,13 @@
 def jekyll(opts = "", path = "")
-  sh "rm -rf _site"
   sh path + "jekyll " + opts
 end
  
+desc "Clean up workspace"
+task :clean do
+  sh "rm -rf tags/*"
+  sh "rm -rf _site"
+end
+
 desc "Build site using Jekyll"
 task :site => [:build] do
   jekyll
@@ -14,9 +19,8 @@ task :serve => [:build] do
 end
  
 desc 'Generate tags page'
-task :tags do
+task :tags => [:clean] do
   puts "Generating tags..."
-  sh "rm -rf tags/*"
   require 'rubygems'
   require 'jekyll'
   include Jekyll::Filters

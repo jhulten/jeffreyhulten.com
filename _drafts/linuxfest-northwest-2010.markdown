@@ -1,8 +1,9 @@
 ---
-title: Linuxfest Northwest 2010 - Day 1
+title: Linuxfest Northwest 2010
 layout: post
 categories:
 - lfnw
+- linux
 ---
 I decided to attend [Linuxfest Northwest](http://linuxfestnorthwest.org) in Bellingham, WA this year. This was a learning opportunity, a networking opportunity, and a chance to stay with [my sister](http://stillseekingsanity.com) for the weekend.
 
