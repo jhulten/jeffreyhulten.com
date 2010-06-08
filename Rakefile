@@ -6,6 +6,7 @@ desc "Clean up workspace"
 task :clean do
   sh "rm -rf tags/*"
   sh "rm -rf _site"
+  sh "rm -rf tragicallyleet-site-*.tgz"
 end
 
 desc "Build site using Jekyll"
