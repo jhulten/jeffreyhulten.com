@@ -3,15 +3,6 @@ layout: tag_rss
 tag: linux
 ---
         <item> 
-        <title>Upgrading Disks with Linux and MD</title> 
-        <link>http://tragicallyleet.com/2006/06/09/upgrading-disks-with-linux-and-md</link> 
-        <comments>http://tragicallyleet.com/2006/06/09/upgrading-disks-with-linux-and-md#comments</comments> 
-        <pubDate>Fri, 09 Jun 2006 00:00:00 -0800</pubDate> 
-        <dc:creator>Jeffrey Hulten</dc:creator> 
-        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
-        <description>/2006/06/09/upgrading-disks-with-linux-and-md</description> 
-        </item>
-        <item> 
         <title>Linode: Great Virtualized Linux Moves to Xen</title> 
         <link>http://tragicallyleet.com/2008/03/28/linode-great-virtualized-linux-moves-to-xen</link> 
         <comments>http://tragicallyleet.com/2008/03/28/linode-great-virtualized-linux-moves-to-xen#comments</comments> 
@@ -19,4 +10,13 @@ tag: linux
         <dc:creator>Jeffrey Hulten</dc:creator> 
         <guid isPermaLink="true">http://tragicallyleet.com</guid> 
         <description>/2008/03/28/linode-great-virtualized-linux-moves-to-xen</description> 
+        </item>
+        <item> 
+        <title>Upgrading Disks with Linux and MD</title> 
+        <link>http://tragicallyleet.com/2006/06/09/upgrading-disks-with-linux-and-md</link> 
+        <comments>http://tragicallyleet.com/2006/06/09/upgrading-disks-with-linux-and-md#comments</comments> 
+        <pubDate>Fri, 09 Jun 2006 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2006/06/09/upgrading-disks-with-linux-and-md</description> 
         </item>

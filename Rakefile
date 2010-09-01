@@ -113,8 +113,8 @@ desc 'upload site to host'
 task :upload => [:site, :rsync]
 
 task :rsync do
-  sh 'rsync -crpvz --delete -e ssh _site/* autolabs@web102.webfaction.com:/home/autolabs/webapps/tragic_staticblog'
-  sh 'scp _site/.htaccess autolabs@web102.webfaction.com:/home/autolabs/webapps/tragic_staticblog'
+  sh 'rsync -crpvz --delete -e ssh _site/* tragicallyleet.com:/srv/tragicallyleet.com'
+  sh 'scp _site/.htaccess tragicallyleet.com:/srv/tragicallyleet.com'
 end
 
 task :require_input do

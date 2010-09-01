@@ -3,6 +3,24 @@ layout: tag_rss
 tag: technology
 ---
         <item> 
+        <title>Who is Responsible for Stopping Counterfeiting?</title> 
+        <link>http://tragicallyleet.com/2006/07/13/who-is-responsible-for-stopping-counterfeiting</link> 
+        <comments>http://tragicallyleet.com/2006/07/13/who-is-responsible-for-stopping-counterfeiting#comments</comments> 
+        <pubDate>Thu, 13 Jul 2006 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2006/07/13/who-is-responsible-for-stopping-counterfeiting</description> 
+        </item>
+        <item> 
+        <title>Music and Man-Made Lighting!</title> 
+        <link>http://tragicallyleet.com/2007/11/09/music-and-man-made-lighting</link> 
+        <comments>http://tragicallyleet.com/2007/11/09/music-and-man-made-lighting#comments</comments> 
+        <pubDate>Fri, 09 Nov 2007 00:00:00 -0800</pubDate> 
+        <dc:creator>Jeffrey Hulten</dc:creator> 
+        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
+        <description>/2007/11/09/music-and-man-made-lighting</description> 
+        </item>
+        <item> 
         <title>Should Smart Shoes Be Banned from Competitive Events?</title> 
         <link>http://tragicallyleet.com/2006/07/06/should-smart-shoes-be-banned-from-competitive-events</link> 
         <comments>http://tragicallyleet.com/2006/07/06/should-smart-shoes-be-banned-from-competitive-events#comments</comments> 
@@ -30,15 +48,6 @@ tag: technology
         <description>/2006/07/13/net-neutrality</description> 
         </item>
         <item> 
-        <title>Who is Responsible for Stopping Counterfeiting?</title> 
-        <link>http://tragicallyleet.com/2006/07/13/who-is-responsible-for-stopping-counterfeiting</link> 
-        <comments>http://tragicallyleet.com/2006/07/13/who-is-responsible-for-stopping-counterfeiting#comments</comments> 
-        <pubDate>Thu, 13 Jul 2006 00:00:00 -0800</pubDate> 
-        <dc:creator>Jeffrey Hulten</dc:creator> 
-        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
-        <description>/2006/07/13/who-is-responsible-for-stopping-counterfeiting</description> 
-        </item>
-        <item> 
         <title>Closed Source vs. Open Source Software</title> 
         <link>http://tragicallyleet.com/2006/07/16/closed-source-vs-open-source-software</link> 
         <comments>http://tragicallyleet.com/2006/07/16/closed-source-vs-open-source-software#comments</comments> 
@@ -46,13 +55,4 @@ tag: technology
         <dc:creator>Jeffrey Hulten</dc:creator> 
         <guid isPermaLink="true">http://tragicallyleet.com</guid> 
         <description>/2006/07/16/closed-source-vs-open-source-software</description> 
-        </item>
-        <item> 
-        <title>Music and Man-Made Lighting!</title> 
-        <link>http://tragicallyleet.com/2007/11/09/music-and-man-made-lighting</link> 
-        <comments>http://tragicallyleet.com/2007/11/09/music-and-man-made-lighting#comments</comments> 
-        <pubDate>Fri, 09 Nov 2007 00:00:00 -0800</pubDate> 
-        <dc:creator>Jeffrey Hulten</dc:creator> 
-        <guid isPermaLink="true">http://tragicallyleet.com</guid> 
-        <description>/2007/11/09/music-and-man-made-lighting</description> 
         </item>
