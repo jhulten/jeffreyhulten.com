@@ -55,7 +55,7 @@ In this simplified version of Ted's roleplaying, the following 'characters' repr
 
 To turn on the security manager you add the -Djava.security.manager flag to the java command line. It references the jre/lib/security/java.policy file for the JRE. 
 
-{% highlight test %} 
+{% highlight text %} 
 grant [codeBase PATH|signedBy KEY] { 
 permission PermissionClass ACTION 
 } 
@@ -104,7 +104,7 @@ The real joy of a rule engine is that you can move to fact-based evaluation of c
 
 Rules need to be discrete encapsulation of knowledge. For instance, "if it is sunny outside, you need sunscreen". The firing of a rule can result in the modification, addition or removal of existing facts. Facts are purely assertions about the problem. For instance: 
 
-{% highlight test %} 
+{% highlight text %} 
 when: there are two people and they share a only one parent 
 then: they are half-siblings 
 {% endhighlight %}
@@ -123,7 +123,7 @@ Since the Rete algorithm is the 'secret sauce' of many rule engines it is good t
 
 You define your rules either in XML (blech) or the Drools Rule Language that is parsed into AST and then into a package. That package is applied to the working memory, which includes the truth maintenance system, the agenda with agenda event support, and working memory event support. Here is an overly simple example of the Drools Rule Language: 
 
-{% highlight test %} 
+{% highlight text %} 
 rule "MyRuleName" 
 	when predicate 
 	then consequence 
@@ -138,7 +138,7 @@ The Drools IDE for Eclipse 3.2 or higher is highly recommended. You will be able
 
 Domain Specific Languages in Drools allows you to extend the rule language to your problem domain, which enables programmers to get away from business policy and focusing on implementation. It simplifies the rule base by removing domain specific duplication and has no performance impact at runtime. The DSL specification specifies natural language on the left and the DRL syntax on the right. 
 
-{% highlight test %} 
+{% highlight text %} 
 [condition]If there is a Person with the age of "{name}"=Person(name=="{name}") 
 [consequence]Say {message}=System.out.println("{message}"); 
 {% endhighlight %}
