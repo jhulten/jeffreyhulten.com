@@ -1,8 +1,0 @@
---- 
-wordpress_id: 84
-layout: post
-title: "360 Degree Light Field Display"
-wordpress_url: http://tragicallyleet.com/2008/04/16/84/
----
-<embed type="application/x-shockwave-flash" width="425" height="350" src="http://youtube.com/v/FF1vFTQOWN4"></embed>
-This is just too cool.  3-D display with no tracking required for horizontal parallax.

@@ -1,0 +1,14 @@
+baseurl: http://jeffreyhulten.com/
+disablePathToLower: true
+languageCode: en-us
+title: Jeffrey Hulten
+permalinks:
+  post: /:year/:month/:title/
+params:
+  Subtitle: "It's hip to be l33t..."
+  AuthorName: "Jeffrey Hulten"
+  GitHubUser: "jhulten"
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  series: "series"

@@ -1,9 +1,0 @@
---- 
-wordpress_id: 85
-layout: post
-title: Mario Theme On Wine Bottles With RC Car
-wordpress_url: http://tragicallyleet.com/2008/04/16/85/
----
-<strong>From dailygamesnews.com via YouTube</strong>
-
-<embed type="application/x-shockwave-flash" width="425" height="350" src="http://youtube.com/v/RqB4ELGL_Lc"></embed>
